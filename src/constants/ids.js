@@ -1,0 +1,11 @@
+export const LOADING_IDS = {
+  GLOBAL: 1,
+  CONTENT: 2,
+  SIGN_IN: 3,
+  TRANSACTION: 4,
+  STATISTICS: 5,
+  PLAYERS: 6,
+  LOGS: 7,
+  MESSAGES: 8,
+  STAKES: 9,
+};

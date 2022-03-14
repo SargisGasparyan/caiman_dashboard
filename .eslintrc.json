@@ -1,0 +1,54 @@
+{
+  "env": { "browser": true, "es6": true },
+  "extends": ["airbnb-base", "react-app"],
+  "globals": { "Atomics": "readonly", "SharedArrayBuffer": "readonly" },
+  "parserOptions": {
+    "ecmaFeatures": { "jsx": true },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "jsx-a11y", "import"],
+  "rules": {
+    "dot-notation": "off",
+    "import/no-cycle": "off",
+    "camelcase": "off",
+    "linebreak-style": 0,
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-boolean-value": "error",
+    "react/jsx-curly-spacing": ["error", "never"],
+    "react/jsx-equals-spacing": ["error", "never"],
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent-props": ["error", 2],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-no-duplicate-props": "error",
+    "react/jsx-no-undef": "error",
+    "react/jsx-tag-spacing": ["error", { "beforeSelfClosing": "always" }],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/self-closing-comp": "error",
+    "react/jsx-max-props-per-line": ["error", { "when": "multiline" }],
+    "react/jsx-first-prop-new-line": ["error"],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/prefer-default-export": "off",
+    "no-param-reassign": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "object-curly-spacing": [
+      "error",
+      "always",
+      { "objectsInObjects": false, "arraysInObjects": false }
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "always",
+      { "objectsInArrays": false, "arraysInArrays": false }
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed",
+      { "requireForBlockBody": true }
+    ],
+    "react-hooks/exhaustive-deps": "off"
+  }
+}

@@ -1,0 +1,121 @@
+.idTable, .dataTable {
+  border-spacing: 6px;
+}
+
+.idTable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 12px;
+}
+
+.userId {
+  font-size: 18px;
+  letter-spacing: 0;
+  color: #5b7077;
+  font-family: "Roboto-Bold";
+  padding: 5px;
+}
+
+.userIdContainer {
+  -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.15));
+  background-color: #f8f8f8;
+}
+
+.firstTitle {
+  font-size: 18px;
+  letter-spacing: 0;
+  color: #ffffff;
+  font-family: "Roboto-Bold";
+  padding: 5px;
+}
+
+.firstTitleContainer {
+  -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.15));
+}
+
+.secondTitle {
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #5b7077;
+  padding: 5px 0 0 0;
+  font-family: "Roboto-Bold";
+}
+
+.thirdTitle {
+  font-size: 13px;
+  color: #6b7f86;
+  font-family: "Roboto-Black";
+  padding: 5px;
+}
+
+.total {
+  font-size: 16px;
+  padding: 10px 20px;
+  letter-spacing: 0;
+  color: #5b7077;
+  font-family: "Roboto-Bold";
+}
+
+.totalContainer {
+  -webkit-filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.2));
+  background-color: #f7f7f7;
+}
+
+.totalValues {
+  padding: 10px 0;
+  font-size: 15px;
+  color: #6b7f86;
+  font-family: "Roboto-Bold";
+}
+
+.centering {
+  text-align: center;
+}
+
+.reportTables {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.quantityAmount {
+  padding: 10px 0;
+  font-size: 13px;
+  color: #839094;
+  font-family: "Roboto-Bold";
+}
+
+.keysTitle {
+  padding: 10px 0;
+  font-size: 13px;
+  letter-spacing: 0;
+  color: #5b7077;
+  font-family: "Roboto-Bold";
+}
+
+.scrollable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  padding: 12px 24px 12px 0;
+}
+
+.report_title {
+  font-size: 17px;
+  padding: 10px 0 0 12px;
+}
+/*# sourceMappingURL=ReportPlayers.module.css.map */

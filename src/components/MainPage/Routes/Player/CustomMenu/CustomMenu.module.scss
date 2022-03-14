@@ -1,0 +1,69 @@
+.custom_menu_container {
+    width: 100%;
+    // height: 100vh;
+}
+
+.custom_menu_titles{
+    font-size: 17px;
+    padding: 10px 0 0 0;
+}
+
+.custom_menu {
+    // margin: 32px 0 0 0 ;
+    margin: 0;
+}
+
+.header_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.header_menu_item{
+    width: 100px;
+    height: 40px;
+    padding: 10px 10px;
+    text-align: center;
+    color: var(--color-font);
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.hdmi_active{
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    color: black;
+    &_colored {
+          background-color: white;
+          border-radius: 5px 5px 0 0;
+          color: black;
+          border-bottom: 4px solid #d35e69; ;
+    }
+}
+
+
+.submenu_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 0 0 3px 3px;
+}
+
+.submenu_item{
+   height: 40px; 
+   font-size: 15px;
+   padding: 10px 22px;
+   text-align: center;
+   white-space: nowrap;
+   color: var(--color-font);
+   cursor: pointer;
+}
+
+.si_active {
+   border-bottom: 4px solid #d35e69;
+}
+
+.submenu_content{
+    border-radius: 8px;
+    margin-top: 10px;
+}

@@ -1,0 +1,91 @@
+.stakes__title {
+  font-size: 16px;
+  color: var(--color-black);
+}
+
+.stakes__container {
+  background: var(--color-white);
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .title {
+    margin: 5px 0;
+    letter-spacing: 1px;
+    font-size: 17px;
+  }
+  .container {
+    padding: 10px 0;
+    .interval_container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .selections {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .content_container{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: fit-content;
+    }
+  }
+}
+
+
+.filterRow {
+  width: 100%;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 5px 0;
+  padding: 10px;
+
+  .row {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+
+  .additionalFilters {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+    .kind {
+      table { 
+        padding: 0;
+
+        caption {
+          text-align: left;
+        }
+        tr {
+          td {
+            padding: 10px 10px 10px 0
+          }
+      }
+      } 
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  background-color: var(--color-white);
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+}
+
+.stakes__table_container {
+  margin-top: 30px;
+
+}

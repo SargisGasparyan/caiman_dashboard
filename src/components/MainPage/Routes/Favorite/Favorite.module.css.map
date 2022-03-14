@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,SAAS,CAAC;EACN,UAAU,EAAE,MAAM;CAKpB;;AANF,AAGI,SAHK,CAGL,GAAG,CAAA;EACC,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,OAAO;CACtB;;AAED,AAAA,YAAY,CAAC;EACT,KAAK,EAAE,EAAE;CACZ",
+    "sources": [
+        "Favorite.module.scss"
+    ],
+    "names": [],
+    "file": "Favorite.module.css"
+}

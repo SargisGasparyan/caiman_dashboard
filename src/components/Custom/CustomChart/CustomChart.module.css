@@ -1,0 +1,24 @@
+.segments__menu_segments, .segments__menu_create {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 4px solid transparent;
+  outline: none;
+  background: none;
+  color: #5B7077;
+  margin: 12px;
+  padding: 0 6px 5px 6px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  cursor: pointer;
+}
+
+.active {
+  color: #282828 !important;
+  font-family: 'Roboto-Black';
+  border-bottom: 4px solid #D35E69;
+  background: var(--color-white);
+  padding: 10px 10px 20px;
+}
+/*# sourceMappingURL=CustomChart.module.css.map */

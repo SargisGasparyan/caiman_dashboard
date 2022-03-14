@@ -1,0 +1,31 @@
+.secondInput, .firstInput{
+    border: 1px solid #a2a2a24f;
+    box-shadow: 1px 1px 7px 2px #a2a2a24f;
+    padding: 8px 15px 8px;
+    background-color: white;
+    align-items: center;
+    color: var(--color-red);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;   
+}
+
+.secondInput{
+    border-radius: 5px;
+}
+.firstInput{
+    border-radius: 5px;
+}
+
+
+
+.firstInput::placeholder, .secondInput::placeholder {
+    font-size: 13px;
+    opacity: 0.5;
+    color: gray;
+    user-select: none;
+}
+.firstInput:hover, .secondInput:hover{
+    border: 1px solid var(--color-red);
+}

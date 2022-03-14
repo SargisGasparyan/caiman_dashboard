@@ -1,0 +1,62 @@
+.secondInput, .firstInput {
+  border: 1px solid #a2a2a24f;
+  -webkit-box-shadow: 1px 1px 7px 2px #a2a2a24f;
+          box-shadow: 1px 1px 7px 2px #a2a2a24f;
+  padding: 5px 15px 5px;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--color-red);
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.secondInput {
+  border-radius: 9px 38px 38px 9px;
+}
+
+.firstInput {
+  border-radius: 38px 9px 9px 38px;
+}
+
+.firstInput::-webkit-input-placeholder, .secondInput::-webkit-input-placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  color: gray;
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+.firstInput:-ms-input-placeholder, .secondInput:-ms-input-placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  color: gray;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.firstInput::-ms-input-placeholder, .secondInput::-ms-input-placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  color: gray;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.firstInput::placeholder, .secondInput::placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  color: gray;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.firstInput:hover, .secondInput:hover {
+  border: 1px solid var(--color-red);
+}
+/*# sourceMappingURL=CustomFromToInput.module.css.map */

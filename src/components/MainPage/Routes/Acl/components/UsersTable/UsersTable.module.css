@@ -1,0 +1,16 @@
+.icon {
+  width: 15px;
+  height: 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.editIcon {
+  background-image: url("../../../../../../assets/images/icons/edit.svg");
+}
+
+.deleteIcon {
+  background-image: url("../../../../../../assets/images/icons/deletee.svg");
+}
+/*# sourceMappingURL=UsersTable.module.css.map */

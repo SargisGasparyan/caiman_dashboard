@@ -1,0 +1,15 @@
+@import "~normalize.css";
+@import "~react-datepicker/dist/react-datepicker.css";
+@import "./App.scss";
+@import "./variables.scss";
+@import "./fonts.scss";
+@import "./preloader.scss";
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        color: var(--color-font);
+    }
+}

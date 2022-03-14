@@ -1,0 +1,130 @@
+.stakes__title {
+  font-size: 16px;
+  color: var(--color-black);
+}
+
+.stakes__container {
+  background: var(--color-white);
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stakes__container .title {
+  margin: 5px 0;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+
+.stakes__container .container {
+  padding: 10px 0;
+}
+
+.stakes__container .container .interval_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stakes__container .container .selections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stakes__container .container .content_container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.filterRow {
+  width: 100%;
+  background-color: var(--color-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 5px 0;
+  padding: 10px;
+}
+
+.filterRow .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.filterRow .additionalFilters {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.filterRow .additionalFilters .kind table {
+  padding: 0;
+}
+
+.filterRow .additionalFilters .kind table caption {
+  text-align: left;
+}
+
+.filterRow .additionalFilters .kind table tr td {
+  padding: 10px 10px 10px 0;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 0;
+  background-color: var(--color-white);
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+}
+
+.stakes__table_container {
+  margin-top: 30px;
+}
+/*# sourceMappingURL=Stakes.module.css.map */

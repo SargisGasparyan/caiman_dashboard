@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "AddMessage.module.scss"
+    ],
+    "names": [],
+    "file": "AddMessage.module.css"
+}

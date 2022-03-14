@@ -1,0 +1,49 @@
+.dropzone__container {
+  width: 280px;
+  max-width: 280px;
+}
+
+.label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 270px;
+  padding: 0 2px;
+  font-weight: bold;
+  font-size: 13px;
+  height: 20px;
+  line-height: 1.2;
+  color: #434850;
+  font-family: Roboto-Black;
+}
+
+.asterisk {
+  font-size: 14px;
+}
+
+.dropzone {
+  width: 280px;
+}
+
+.dropzone__input {
+  background: #F3F3F3;
+  width: 270px;
+  padding: 15px 15px 29px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.15;
+  color: #839094;
+  cursor: pointer;
+}
+
+.hidden__input {
+  margin: 0;
+  display: none;
+}
+/*# sourceMappingURL=CustomDropzone.module.css.map */

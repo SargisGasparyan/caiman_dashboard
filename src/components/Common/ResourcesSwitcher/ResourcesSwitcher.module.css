@@ -1,0 +1,22 @@
+.editRoot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 12px;
+  background-color: #ececec;
+  padding: 12px;
+}
+
+.editName {
+  display: block;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1;
+          flex: 2 1;
+}
+
+.editCheckboxes {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+/*# sourceMappingURL=ResourcesSwitcher.module.css.map */

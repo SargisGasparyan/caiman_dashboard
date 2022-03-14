@@ -1,0 +1,1012 @@
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+//     -webkit-appearance: none;
+//     margin: 0;
+// }
+
+// input[type='number'] {
+//     -moz-appearance: textfield;
+// }
+
+// .menu-dashboard, .menu-players, .logo-NR,.menu-users,
+// .menu-items{
+//     content: '';
+//     margin: 8px;
+//     width: 30px;
+//     height: 22px;
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     display: inline-block;
+// }
+
+// // .menu-dashboard{
+// //     background-image: url('../images/Dashboard.svg');
+// // }
+// // .menu-players{
+// //     background-image: url('../images/Players.svg');
+// // }
+// // .menu-reports{
+// //     background-image: url('../images/Reports.svg');
+// // }
+// // .menu-statistics{
+// //     background-image: url('../images/Statistics.svg');
+// // }
+// // .menu-stakes{
+// //     background-image: url('../images/Stakes.svg');
+// // }
+// // .menu-financial{
+// //     background-image: url('../images/Financials.svg');
+// // }
+// // .menu-segments {
+// //     background-image: url('../images/segment__icon.svg');
+// // }
+// // .menu-promotion{
+// //     background-image: url('../images/Promotional tools.svg');
+// // }
+// // .menu-sportsbook{
+// //     background-image: url('../images/Sportsbook.svg');
+// // }
+// // .menu-users{
+// //     background-image: url('../images/Users.svg');
+// // }
+
+// .logo-NR{
+//     background-image: url('../images/LOGO.svg');
+// }
+
+// .ui.menu a, .drop{
+//     display: flex!important;
+//     align-items: center!important;
+
+// }
+// .ui.menu .item, .drop{
+//     padding: 0.18em!important;
+//     color: rgb(163, 188, 222)!important;
+// }
+// .drop:hover  .ui.dropdown .menu.transition {
+//     background-color: rgb(64, 75, 90)!important;
+//     display: block;
+// }
+// .drop:hover {
+//     background-color: rgb(64, 75, 90)!important;
+
+// }
+// .menu-f-d{
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+
+// .flag-container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .home {
+//     width: 100%;
+// }
+
+// .home .tab-menu-flex {
+//     height: 80px;
+// }
+
+// .menu.nr, .menu.nr .menu, .nr .menu {
+//     background-color: #2B333E !important;
+//     border-radius: 0 !important;
+//     box-shadow: none !important;
+//     margin: 0 !important;
+//     color: #262626 !important;
+// }
+
+// .ui.menu {
+//     box-shadow: none !important;
+
+// }
+
+// .right-side {
+//     padding: 10px 0 0 0 ;
+//     flex-basis: 80vw;
+//     position: relative;
+//     left: 255px;
+//     min-width: 80vw;
+//     width: 80vw;
+// }
+
+// a {
+//     color: #A3BCDE !important;
+//     text-decoration: none;
+//     display: block;
+//     padding: 2px;
+//     font-weight: bolder;
+// }
+
+// a:hover, a.active {
+//     color: #303132;
+//     text-decoration: none;
+//     /*background-color: #404b5a !important;*/
+//     background-color: transparent !important;
+// }
+
+// .items {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .create-user.btn {
+//     height: 38px;
+// }
+
+// .pointer {
+//     cursor: pointer;
+// }
+
+// .ui.table thead tr:first-child > th:first-child {
+//     width: 50px;
+// }
+
+// .input {
+//     width: 100%;
+// }
+
+// .input-box, .check-box, .select-blackList {
+//     padding: 13px;
+// }
+
+// .check-box.save-btn {
+//     display: flex;
+//     justify-content: flex-end
+// }
+
+// .add-own, .remove-own {
+//     padding: 8px 12px;
+//     color: slategray;
+//     cursor: pointer;
+// }
+
+// .add-own {
+//     color: #21ba45
+// }
+
+// .remove-own {
+//     margin: 17px 0 !important;
+//     padding: 8px 12px;
+//     color: #c10a0a
+// }
+
+// .select-blackList .default.text {
+//     color: black !important;
+// }
+
+// .none {
+//     display: none
+// }
+
+// .input-box, .acl-edit-res {
+//     display: flex;
+// }
+
+
+// .error-mes_isTest {
+//     display: block;
+//     font-size: 11px;
+//     color: #f8757c;
+// }
+
+// .errorMassage.error-mes{
+//     width: 150px!important;
+// }
+// .req-mess {
+//     display: block;
+//     font-size: 14px;
+//     text-indent: 12px;
+//     color: #6aff1b;
+//     margin: 0 8px;
+//     text-align: center;
+//     font-weight: 800;
+//     height: 10px;
+// }
+
+// .req-mess.err {
+//     color: red
+// }
+
+// .modal.req-mess.err {
+//     color: red !important;
+//     text-align: center !important;
+// }
+
+// .modal.req-mess {
+//     text-align: center !important;
+// }
+
+
+// .pagi-own {
+//     display: flex!important;
+//     justify-content: space-between!important;
+//     position: relative;
+//     left: 216px;
+//     transform: translate(-214px, 1px);
+// }
+// .pagi-own.menu{
+//     background-color: #F3F3F3!important;
+// }
+
+// .ui.table td {
+//     padding: .2em .7em !important;
+// }
+
+// tr {
+//     padding: 8px 2px !important;
+// }
+// tr.total-row>td{
+//     min-width: 70px!important;
+// }
+
+// .filter-btn {
+//     padding: 9px !important;
+//     vertical-align: middle !important;
+// }
+
+// .filter-div {
+//     margin: 20px 0 0 2%;
+// }
+
+// .page-title {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 12px;
+// }
+
+// .page-title._home {
+//     padding: 0 12px;
+// }
+
+// .page-title.search {
+//     align-items: baseline;
+// }
+
+// .page-title h2 {
+//     display: block;
+//     flex-basis: 20%
+// }
+
+// .page-title .search {
+//     display: block;
+//     flex-basis: 50%
+// }
+
+// .accordion-own {
+//     display: flex !important;
+//     justify-content: space-between !important;
+// }
+
+// .margin-l {
+//     margin-left: 8px !important
+// }
+
+// .margin-l-18 {
+//     margin-left: 18px !important
+// }
+
+// .margin-3 {
+//     margin: 3px
+// }
+
+// .margin-r {
+//     margin-right: 12px
+// }
+
+
+// .content.own-nr {
+//     display: flex !important;
+//     padding: 9px;
+//     align-items: center;
+// }
+
+// .content.own-nr img {
+//     margin: 0 3px
+// }
+
+// .flex-b {
+//     flex-basis: 80%;
+// }
+
+// /* AutoComplete  CSS*/
+// .react-autosuggest__container {
+//     position: relative;
+// }
+
+// .react-autosuggest__input {
+//     width: 240px;
+//     height: 30px;
+//     padding: 10px 20px;
+//     font-family: Helvetica, sans-serif;
+//     font-weight: 300;
+//     font-size: 16px;
+//     border: 1px solid #aaa;
+//     border-radius: 4px;
+// }
+
+// .react-autosuggest__input--focused {
+//     outline: none;
+// }
+
+// .react-autosuggest__input--open {
+//     border-bottom-left-radius: 0;
+//     border-bottom-right-radius: 0;
+// }
+
+// .react-autosuggest__suggestions-container {
+//     display: none;
+// }
+
+// .react-autosuggest__suggestions-container--open {
+//     display: block;
+//     position: absolute;
+//     top: 51px;
+//     width: 280px;
+//     border: 1px solid #aaa;
+//     background-color: #fff;
+//     font-family: Helvetica, sans-serif;
+//     font-weight: 300;
+//     font-size: 16px;
+//     border-bottom-left-radius: 4px;
+//     border-bottom-right-radius: 4px;
+//     z-index: 2;
+// }
+
+// .react-autosuggest__suggestions-list {
+//     margin: 0;
+//     padding: 0;
+//     list-style-type: none;
+// }
+
+// .react-autosuggest__suggestion {
+//     cursor: pointer;
+//     padding: 10px 20px;
+// }
+
+// .react-autosuggest__suggestion--highlighted {
+//     background-color: #ddd;
+// }
+
+// .user-list {
+//     display: flex;
+// }
+
+// .default.text {
+//     color: black !important;
+// }
+
+// .log-out-a {
+//     cursor: pointer;
+//     position: absolute !important;
+//     display: block !important;
+//     bottom: 10px;
+//     width: 100%;
+// }
+
+// .ui.vertical.menu .dropdown.item:not(.upward) .menu {
+//     top: -8px !important;
+// }
+
+// .transition.own {
+//     display: block !important;
+// }
+
+// .ui.scrolling.modal.edit-or-copy {
+//     width: auto !important;
+// }
+
+// .ui.scrolling.modal.edit-or-copy .template-name.abs {
+//     right: 124px;
+// }
+
+// .visible.req-mess.err {
+//     position: absolute;
+//     top: 40%;
+// }
+
+// .ui.sortable.table thead th {
+//     cursor: unset !important;
+//     white-space: pre-wrap !important;
+// }
+
+// .color-red {
+//     color: #e80101
+// }
+
+// .ui.small.table.tournament-table {
+//     font-size: 0.7em !important;
+// }
+
+// .ui.table.tournament-table td {
+//     padding: .5em .35em !important;
+//     text-align: inherit;
+// }
+
+// .row-count {
+//     display: flex;
+//     justify-content: flex-end;
+//     flex-direction: column;
+//     text-align: right;
+// }
+
+// .row-count .label {
+//     font-size: 10px;
+//     text-indent: 3px;
+//     margin: 0;
+// }
+
+// .ui.selection.dropdown.own {
+//     min-width: 2em !important;
+// }
+
+// .auto-complete {
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//     display: flex;
+//     justify-content: flex-end;
+// }
+
+// body {
+//     background: rgba(225, 225, 225, 0.73) !important;
+//     font-family: 'Roboto-Black' !important;
+// }
+
+// // .ui.menu .item {
+// //     line-height: 1.8 !important;
+// //     font-size: 16px !important;
+// //     font-weight: 800 !important;
+// // }
+
+// .basic-single {
+//     width: 136px;
+// }
+// .basic-single.width {
+//     width: 200px;
+// }
+
+// .basic-single.res {
+//     width: 350px !important;
+
+// }
+
+// .basic-single .select{
+//     border-color: transparent !important;
+// }
+
+// .basic-single .select, .limit, .user-time {
+//     font-size: 16px;
+//     font-weight: 800;
+//     color: #434850
+// }
+
+// .limit, .user-time {
+//     width: 150px;
+//     text-align: center;
+// }
+
+// .basic-single .select.own__control--is-focused, .game-select .select.own__control--is-focused {
+//     box-shadow: none;
+//     outline: none!important;
+//     border-color: transparent!important;
+// }
+
+// .select svg, .lang svg {
+//     fill: #D74D5A !important;
+// }
+
+// i.red.own-color.icon {
+//     color: #D74D5A !important;
+// }
+
+// .flex-center {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// .flag-select__btn {
+//     outline: none !important;
+// }
+
+// .flag-select__btn {
+//     color: #434850
+// }
+
+// .headPhone {
+//     content: '';
+//     margin: 10px 11px;
+//     right: 10px;
+//     width: 25px;
+//     height: 24px;
+//     background-image: url('../images/online chat.svg');
+//     background-size: 100%;
+//     background-repeat: no-repeat;
+// }
+
+
+// /*//////////////////*/
+
+// .flag-select {
+//     position: relative;
+//     display: inline-block;
+//     vertical-align: inherit;
+//     padding-bottom: 5px;
+//     text-align: left;
+//     width: 74px
+// }
+
+// .flag-select__btn {
+//     padding: 0 8px;
+//     color: #4d4d4d;
+//     border: none;
+//     background: transparent
+// }
+
+
+// .flag-select__btn:before {
+//     content: " ";
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     z-index: 999
+// }
+
+// .flag-select__option {
+//     cursor: pointer;
+//     padding: 0 8px 3px 8px;
+//     margin: 4px 0;
+//     white-space: nowrap
+// }
+
+// .flag-select__options {
+//     position: absolute;
+//     z-index: 999999;
+//     border: 1px solid #bdbbbb;
+//     border-radius: 3px;
+//     background: #fff;
+//     margin-top: 8px;
+//     padding: 8px 0;
+//     max-height: 160px;
+//     overflow: auto
+// }
+
+// .flag-select__options.to--left {
+//     right: 10px
+// }
+
+// .flag-select__option--placeholder {
+//     height: inherit;
+//     width: inherit;
+//     display: inline-block;
+//     vertical-align: middle
+// }
+
+// .flag-select__option:not(.flag-select__option--placeholder):hover, .flag-select__option:not(.flag-select__option--placeholder):focus {
+//     outline: none;
+//     background: #eaeaea
+// }
+
+// .flag-select__option.has-label {
+//     padding: 0 20px 3px 8px
+// }
+
+// .flag-select__option__label {
+//     font-size: 1em;
+//     position: relative;
+//     padding-left: 9px
+// }
+
+// .flag-select__option__icon {
+//     width: 1.3em;
+//     height: 1.3em;
+//     position: relative;
+//     top: 0.3em
+// }
+
+// .flag-select .filterBox {
+//     width: 100%
+// }
+
+// .flag-select .filterBox input {
+//     width: 90%;
+//     margin: 0 4%
+// }
+
+// .flag-select .filterBox input:focus {
+//     outline: none
+// }
+
+// .flag-select .hidden {
+//     display: none
+// }
+
+// .flag-select .no--focus {
+//     pointer-events: none
+// }
+
+// .ui.modal.edit-user {
+//     min-height: 400px !important;
+// }
+
+// // .ui.inverted.menu {
+// //     padding: 7px !important;
+// // }
+
+// .ui.modal > .content {
+//     /*min-height: 407.5px !important;*/
+//     background-color: #fbfbfb !important;
+// }
+
+// .right-side {
+//     transition: all .45s ease-in-out;
+// }
+
+// .right-side {
+//     transition: all .45s ease-in-out;
+// }
+
+// .right-side.transition {
+//     left: calc(100% - 90vw);
+// }
+
+// .rotate180 {
+//     transform: rotate(180deg);
+// }
+
+// .ui.dropdown .menu .selected.item, .ui.dropdown.selected {
+//     color: #ffffff !important;
+//     background-color: gray !important;
+// }
+
+// // .ui.dropdown .menu > .item {
+// //     color: white !important;
+// // }
+
+// .margin-12 {
+//     margin: 12px;
+// }
+
+// .font-size-17 {
+//     font-size: 17px;
+// }
+
+// /*.ui.menu .active.item {*/
+// /*    color: #272727 !important;*/
+// /*}*/
+
+// .ui.input > input.data-picker-inp {
+//     color: #5B7077 !important;
+//     font-family: 'Roboto-Black' !important;
+// }
+
+// .ui.input > input.data-picker-inp.err {
+//     color: #f8757c !important;
+// }
+
+
+// i.icon.calendar:before {
+//     content: url("../images/calendar.png") !important;
+//     width: 18px !important;
+//     height: 17px !important;
+// }
+
+// i.icon.calendar:before {
+//     content: url("../images/calendar.png") !important;
+//     width: 17px !important;
+//     height: 16px !important;
+//     top: 46% !important;
+// }
+
+// i.icon.sw:before {
+//     content: url("../images/SW.png") !important;
+//     width: 22px !important;
+//     height: 22px !important;
+//     padding-bottom: 5px;
+//     top: 46% !important;
+
+// }
+
+// i.icon.user.own-color:before {
+//     content: url("../images/user.png") !important;
+//     width: 21px !important;
+//     height: 25px !important;
+
+// }
+
+// i.clock.outline.margin-r {
+//     margin: 0 12px 0 0
+// }
+
+// .table-cell {
+//     text-align: right;
+//     padding: 0 12px;
+// }
+
+// .players_table .ui.table {
+//     border-spacing: 6px !important;
+//     display: block !important;
+//     width: unset !important;
+//     color: #6B7F86 !important;
+//     border-radius: 0 !important;
+//     border: 0 !important;
+// }
+
+// .subtitle-user {
+//     line-height: 4;
+// }
+
+// .players_table .ui.table thead tr.subtitle th {
+//     color: #6B7F86
+// }
+
+
+// .ui.checkbox input:checked ~ label:after {
+//     color: #f8757c !important;
+// }
+
+// .nr._players {
+//     background-color: #ffdfdf !important;
+//     border-radius: 0 !important;
+//     box-shadow: none !important;
+//     margin: 0 !important;
+//     color: #262626 !important;
+// }
+
+// /*.ui.sortable.table thead th.ascending:after{*/
+// /*    content: url("../images/up.png") !important;*/
+// /*    width: 6px !important;*/
+// /*    height: 8px !important;*/
+// /*}*/
+// .ui.sortable.table thead th.ascending:after {
+//     font-size: 14px !important;
+//     color: #5D6167 !important;
+//     top: -1px !important;
+//     margin: 0 0 0 8px!important;
+//     position: relative !important;
+// }
+
+// .ui.sortable.table thead th.descending:after {
+//     font-size: 14px !important;
+//     color: #5D6167 !important;
+//     top: 4px !important;
+//     margin: 0 0 0 8px!important;
+//     position: relative !important;
+// }
+
+// i.icon.sort:before {
+//     color: #5D6167 !important;
+// }
+
+// .ui.sortable.table.universal {
+//     border: 0 !important;
+// }
+
+// .ui.table.universal thead tr th {
+//     border: 0 !important;
+//     /*margin: 0 3px !important;*/
+//     border-radius: 0 !important;
+//     color: #434850!important;
+//     min-width: 182px !important;
+
+// }
+
+// .ui.table.universal tr:first-child th {
+//     padding: 3px!important;
+// }
+
+// .ui.table.universal tbody{
+//     background-color:#F9F9F9!important;
+//     color: #434850!important;
+// }
+// .ui.table.universal tr td{
+//     border: 0 !important;
+//     min-width: 180px!important;
+// }
+// .ui.sortable.table.universal thead th:after{
+//     margin: 0 !important;
+//     content: unset!important;
+// }
+// .flex-right{
+//     display: flex;
+//     justify-content: flex-end;
+// }
+
+// .data-picker-inp._message {
+//     margin: 0 !important;
+// }
+// // .menu.visible.transition {
+// //     display: none!important;
+// //     visibility: unset!important;
+// // }
+// h3.mr-top-20{
+//     margin-top:20px!important;
+// }
+
+
+
+// .own-loader{
+//     position: absolute!important;
+//     top: unset!important;
+//     bottom: 12%!important;
+//     transition: unset!important;
+
+// }
+
+// .loaderCenter{
+//     display: block!important;
+//     position: fixed!important;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// .players-report .own-loader{
+//     top: 40%!important;
+//     bottom: unset!important;
+// }
+
+// .loaderSegment  .ui.dimmer>.content{
+//     position: fixed!important;
+//     top:50% !important;
+//     left: 55% !important
+// }
+// .p{
+//     display: -webkit-box;
+//     max-width: 200px;
+//     /*-webkit-line-clamp: 4;*/
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+// }
+// .pp{
+//     display: -webkit-box;
+//     max-width: 200px;
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+// }
+// .p::after{
+//     content: "...";
+//     position: fixed;
+// }
+// .div{
+//     max-height: 120px;
+//     line-height: 1.2;
+// }
+
+// v3 - new global styles
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-blue-dark);
+    border-radius: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-grey);
+    font-family: 'Roboto-Black';
+    color: var(--color-font);
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #A3BCDE;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.m-rl-10 {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-sb-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-al-c {
+    display: flex;
+    align-items: center;
+}
+
+.customLabel {
+    padding: 0 2px;
+    color: var(--color-font-dark);
+    font-weight: bold;
+    font-size: 13px;
+    height: 18px;
+}
+
+.u-s-n {
+    user-select: none;
+}
+
+.c-p {
+    cursor: pointer;
+}
+
+.c-d {
+    cursor: default !important;
+}
+
+.hidden {
+    overflow: hidden !important;
+}
+
+.error-mes {
+    display: block;
+    font-size: 11px;
+    text-indent: 8px;
+    color: #f8757c;
+}
+
+.transition {
+  transition: all 0.6s ease-out
+}
+
+.dark {
+    color: var(--color-font-dark);
+}
+
+.whiteBackground {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.settingsIcon {
+    background-image: url('../images/settings.png');
+}
+
+.lockIcon {
+    background-image: url('../images/lock.png')
+}
+
+.page_title{
+    font-size: 17px;
+    color:  var(--color-font);
+}

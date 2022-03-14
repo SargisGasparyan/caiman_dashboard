@@ -1,0 +1,28 @@
+.root {
+  background-color: var(--color-font);
+  color: white;
+  border: none;
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 7px 20px;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  white-space: nowrap;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.root:active {
+  -webkit-box-shadow: inset 0px 0px 10px 3px #ffffff48;
+          box-shadow: inset 0px 0px 10px 3px #ffffff48;
+}
+
+.root:disabled {
+  background-color: rgba(128, 128, 128, 0.336);
+  cursor: default;
+}
+/*# sourceMappingURL=CustomButton.module.css.map */

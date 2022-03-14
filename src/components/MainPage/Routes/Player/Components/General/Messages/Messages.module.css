@@ -1,0 +1,56 @@
+.content_container {
+  width: 100%;
+  margin: 12px 0 0 0;
+  padding: 10px 10px 20px;
+  background: #fff;
+}
+
+.content_container .title {
+  margin: 0;
+  color: var(--color-font);
+  font-size: 14px;
+}
+
+.content_container .datepicker_select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content_container .apply_reset_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.content_container .messages_table {
+  margin: 0;
+}
+
+.content_container .search__add_message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.test {
+  max-width: 400px;
+  white-space: normal;
+  text-align: center;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=Messages.module.css.map */

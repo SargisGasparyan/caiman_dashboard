@@ -1,0 +1,131 @@
+.button{
+    width: 43px;
+    height: 23px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //filter: drop-shadow(0px 1px 0.5px rgba(0,0,0,0.05));
+    background-size: 100%;
+    background-repeat: no-repeat;
+    //background-attachment: fixed;
+    background-position: center;
+}
+
+.global_limits{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.glimits_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.light{
+     background-image: url('../../../../../../../assets/images/ss_lb.svg') !important;
+    }
+
+.dark{
+    background-image: url('../../../../../../../assets/images/ss_db.svg') !important;
+}
+
+.images{
+    width: 10px;
+    height: 10px;
+}
+
+
+.limits_container{
+    background: #fff;
+    padding: 2px 20px;
+    border-radius: 1px;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+}
+
+
+//// TABLE
+.sportsbook_container{
+    background-color: white;
+}
+.table{
+    width: 100%;
+}
+.table_header{
+    width: calc(100%/4);
+    background-color: white;
+    color: var(--color-font);
+    padding: 5px !important;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.table_body{
+    border: 1px solid rgba(134, 236, 138, .15) ;
+   
+}
+
+.table_row{
+    width: calc(100%/4);
+    background-color: #F7F7F7;
+}
+
+.table_cell {
+    padding: 3px 0 3px ;
+    //border-bottom: 3px solid white;
+    background-color: #F7F7F7;
+}
+.table_cell_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 10px ;
+}
+
+.table_cell_item_first{
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 10px ;
+}
+
+.table_input{ 
+    height: 30px;   
+    input {
+         height: 20px;
+        //  width: 0px !important;
+         background-color: white;
+    }
+}
+
+.input_wrapper{
+    height: 20px;
+}
+.icon{
+    width: 20px;
+    height:20px;
+    padding: 1px;
+}
+
+.table_text{
+    margin: 0px 10px;
+}
+
+
+.pagiNation{
+    background-color: white;
+}
+
+.competition_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.competition_edit_button{
+    margin: 20px 0 10px 0;
+}

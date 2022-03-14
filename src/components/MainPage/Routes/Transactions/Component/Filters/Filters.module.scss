@@ -1,0 +1,120 @@
+.wrapper{
+    width: 100%;
+    margin: 12px 0 0 0;
+    padding: 10px 10px 20px;
+    background: #fff;
+    border-radius: 5px;
+    .title{
+      margin: 0 0 14px;
+      font-size: 14px;
+    }
+}
+
+.filters{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.apply_reset_buttons{
+    margin-top: 18px;
+}
+.upload_and_modal{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding: 0px 30px;
+    .upload{
+        display: flex;
+        margin-right: 40px;
+    }
+    .upload_button{
+        height: 34px;
+        margin-top: 18px; 
+        border-radius: 0px 10px 10px 0px;
+        box-shadow: 1px 1px 7px 2px #a2a2a24f
+    }
+    .modal_buttons{
+        margin-top: 18px;
+        display: flex;
+        .m_button{
+            background-color: var(--color-light-grey);
+color: var(--color-red);
+margin: 0 5px;
+font-size: 30px;
+padding: 0 20px;
+        }
+    }
+}
+
+///// 
+
+.checkbox_container{
+    width: 100%;
+    margin-top: 12px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .checkboxs_wrapper{
+        display: flex;
+        align-items: center;
+        padding: 2px 0 2px 0;
+        margin-left: 7px;
+        gap: 10px;
+        p {
+            font-size: 13px;
+        }
+        label{
+            margin-right: 25px;
+        }
+    }
+    
+    .filters_dropdown_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-right: 10px;
+        gap: 7px;
+        height: 40px;
+        h3{
+            font-size: 10px;
+        }
+    }
+
+    .filter_icons{
+        width: 13px;
+        height: 13px;
+        &_right{
+            width: 13px;
+            height: 13px;
+        }
+        &_rotate{
+            width: 15px;
+            height: 15px;
+            transform: rotate(180deg);
+        }
+
+    }
+}
+
+
+.dropdown_checkbox{
+    margin: 10px auto;
+    padding: 10px 0px 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: white;
+    div{
+        font-size: 10px;
+        padding: 5px 0px 5px 0px;
+    }
+    label{
+       margin-right: 25px;
+    }
+}

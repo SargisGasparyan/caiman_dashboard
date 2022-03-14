@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 35" width="55" height="35">
+	<title>Монтажная область 1</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #5b6f77 } 
+	</style>
+	<g id="Монтажная область 1">
+		<g id="Группа 1">
+			<path id="Прямоугольник 2 копия 11" class="shp0" d="M18 2L38 2C46.28 2 53 8.72 53 17C53 25.28 46.28 32 38 32L18 32C9.72 32 3 25.28 3 17C3 8.72 9.72 2 18 2Z" />
+		</g>
+	</g>
+</svg>

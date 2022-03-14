@@ -1,0 +1,76 @@
+.transactionContainer {
+  background: var(--color-white);
+  padding: 10px 10px 20px;
+}
+
+.selectAndButtonBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selectAndButtonBlock .selectType {
+  margin-left: 50px;
+}
+
+.selectAndButtonBlock .applyButton {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 3px;
+  margin-left: 40px;
+}
+
+.cancelAndMoveButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding: 30px 0 20px;
+}
+
+.cancelAndMoveButtons .cancelButton {
+  width: 20%;
+  background-color: #e0e1e2;
+  color: var(--color-font);
+}
+
+.cancelAndMoveButtons .moveButton {
+  width: 20%;
+  margin-right: 20px;
+}
+
+.tableButton {
+  background-color: var(--color-font);
+}
+
+.moveTable {
+  width: 5%;
+}
+
+.searchField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchField .applyButton {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.tableChange {
+  max-height: 280px;
+  overflow: scroll;
+}
+/*# sourceMappingURL=Transaction.module.css.map */

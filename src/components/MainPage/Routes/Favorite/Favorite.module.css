@@ -1,0 +1,13 @@
+.infoIcon {
+  text-align: center;
+}
+
+.infoIcon img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.deleteTable {
+  width: 5%;
+}
+/*# sourceMappingURL=Favorite.module.css.map */

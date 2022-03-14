@@ -1,0 +1,10 @@
+@import 'bootstrap';
+@import 'bootstrap/scss/grid';
+@import 'bootstrap/scss/modal';
+
+@mixin flexMixin($direction, $align, $justifyContent ) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justifyContent;
+}

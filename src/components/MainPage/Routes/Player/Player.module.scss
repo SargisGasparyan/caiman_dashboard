@@ -1,0 +1,30 @@
+.content_container{
+    background: #fff;
+    padding: 2px 20px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.title{
+    font-size: 17px;
+    //padding: 10px 0 0 12px;
+    color: #587370;
+}
+
+.btn_block {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 0px 30px;
+}
+
+.input_block{
+    padding-top: 10px;
+    display: flex ;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+}

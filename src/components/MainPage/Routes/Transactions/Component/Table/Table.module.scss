@@ -1,0 +1,36 @@
+.table_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_left{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        >img{
+            width: 18px;
+            height: 18px;
+        }
+        >p{
+            font-size: 20px;
+        }
+    }
+}
+
+.table_body{
+    background-color: white;
+}
+
+
+.settingsLogoWrapper {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    border-radius: 40px;
+    background: var(--color-grey);
+    padding: 5px 15px;
+    cursor: pointer;
+}
+

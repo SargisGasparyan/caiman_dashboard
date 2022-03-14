@@ -1,0 +1,355 @@
+.segments__header {
+  font-size: 18px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.segments__menu {
+  display: flex;
+
+  font-size: 16px;
+}
+
+.segments__menu_segments, .segments__menu_create{
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 4px solid transparent;
+  outline: none;
+  background: none;
+  color: #5B7077;
+  margin: 12px;
+  padding: 0 6px 5px 6px ;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  cursor: pointer;
+}
+
+.segments__menu_segments:hover, .segments__menu_create:hover {
+  transform: translate(-8px,0);
+  transition: all .2s ease;
+  border-bottom: 4px solid #D35E69;
+}
+
+.active {
+  color: #282828!important;
+  font-family: 'Roboto-Black';
+  border-bottom: 4px solid #D35E69;
+}
+
+.active__draft__create {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.active__draft_container {
+  display: inline-block;
+  padding: 5px;
+  background: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.create__button, .choose__button {
+  background: var(--color-red);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 11px 21px;
+  height: 40px;
+  display: flex;
+  font-weight: bold;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  align-items: center;
+  border-radius: .28571429rem;
+  cursor: pointer;
+}
+
+.active__container, .create__segment_container, .popup, .segments__list_container, .last__update, .hybridType__container {
+  background: #fff;
+  padding: 11px 20px;
+  border-radius: 0 5px 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+.selectors__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.apply_reset_buttons {
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.segments__table {
+  margin-top: 20px;
+  border-top-left-radius: 5px;
+}
+
+.create__segment_container, .popup {
+  display: inline-block;
+  border-top-left-radius: 5px;
+}
+
+.create__segment_container {
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+}
+
+.custom__select {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.asterisk {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.segments__list_container, .hybridType__container {
+  width: 100%;
+  padding: 0;
+  border-radius: 0;
+  height: fit-content;
+}
+
+.popup {
+  width: 290px;
+  margin-left: 15px;
+  border-radius: 5px;
+  padding: 10px 0 0 0;
+}
+.create__segment_page {
+  width: fit-content;
+  display: flex;
+}
+
+.segments__list {
+  width: 100% ;
+  text-align: left;
+  padding: 0;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+.segments__list_item, .segments__list_item_child {
+  width: 100%;
+  display: flex;
+  margin-bottom: 5px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #839094;
+}
+
+.create__arrow_right, .create__arrow_top, .create__arrow_bottom {
+  border: solid #839094;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  transform: rotate(-50deg);
+}
+
+.create__arrow_top {
+  transform: rotate(225deg);
+}
+
+.create__arrow_bottom {
+  transform: rotate(45deg);
+  border-color: var(--color-red);
+}
+
+.segments__title {
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.last__update {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: fit-content;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.more__button {
+  width: fit-content;
+  margin: 10px;
+  height: 35px;
+}
+
+.last__update_text {
+  margin: 0;
+}
+
+.clock__icon {
+  height: 15px;
+  margin-right: 3px;
+}
+
+.segments__list_item_child {
+  width: 100%;
+  background-color: white;
+  padding-left: 30px;
+}
+
+.thirdPopupDataPicker {
+  width: fit-content;
+}
+
+/* Checkbox styles starts */
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  border-radius: 10%;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+}
+
+.check__container {
+  display: flex;
+}
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 11px;
+  border: solid red;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Checkbox styles end */
+
+/* Textarea styles start */
+
+textarea {
+  border: none;
+  width: 100%;
+  background: var(--color-light-grey);
+  resize: none;
+  outline: none;
+  padding: 7px 15px;
+  color: var(--color-textGrey);
+  border-radius: 5px;
+}
+
+.textarea__label {
+  padding: 0 2px;
+  color: var(--color-strongGrey);
+  font-weight: bold;
+  font-size: 13px;
+  height: 20px;
+}
+
+/* Textarea styles end */
+
+.title__input {
+  color: var(--color-textGrey);
+  border: none;
+  outline: none;
+  background: var(--color-light-grey);
+}
+
+/* Hybrid segment type styles start */
+
+.hybridType__container {
+  padding: 10px;
+  display: flex;
+}
+
+.hybridType__choose_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.choose__button {
+  width: fit-content;
+  height: 34px;
+  margin-top: 3px;
+}
+
+.main__checkbox_container {
+  margin: 0 0 20px 10px;
+}
+
+.generate__type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.generate__button {
+  background: #e0e1e2;
+  color: rgba(0,0,0,.6);
+  font-weight: bold;
+}
+
+/* Hybrid segment type styles end */
+
+/* Dynamic segment type styles start */
+
+
+.popups {
+  display: flex;
+}

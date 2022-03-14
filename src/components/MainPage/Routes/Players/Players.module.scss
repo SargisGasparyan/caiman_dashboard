@@ -1,0 +1,159 @@
+
+.heading__part {
+    padding: 0 0 0 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title{
+        margin: 0;
+        color: var(--color-black);
+
+        font-size: 17px;
+    }
+}
+
+.content_container{
+    width: 100%;
+    margin: 12px 0 0 0;
+    padding: 10px;
+
+    background: #fff;
+    border-radius: 5px;
+
+    .filter_title {
+        margin: 0 0 14px;
+        font-size: 14px;
+    }
+
+    .inputs_field {
+        width: 100%;
+        margin: 10px auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .datepickers__container {
+        width: 85%;
+        margin: 15px auto 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .rages {
+        width: 85%;
+        margin: 15px auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn_block {
+        padding-right: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+// .filter_items_wrapper {
+//     width: 80%;
+//     // margin: 0 auto;
+//     flex-direction: row;
+//     // flex-wrap: wrap;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     // gap: 2rem;
+// }
+
+// .mr_top {
+//     margin-top: 10px;
+//     width: 17% !important;
+//     max-width: 20% !important;
+//     min-height: 70px;
+// }
+
+.player-item-label {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.player-border-style {
+    border: 1px solid rgba(134, 236, 138, .15) !important;
+}
+.inp-players {
+    width: auto !important;
+    background-color: #F8F8F8 !important;
+    height: 30px !important;
+    max-width: 287px !important;
+    min-width: 151px !important;
+}
+
+.filtre-title{
+    color: #587370;
+    font-weight: bold;
+}
+
+.bottom{
+    top: -4px !important;
+}
+// .width_100 {
+//     display: flex;
+//     // flex-direction: column;
+//     justify-content: space-between;
+//     align-items: center;
+//     width: 85%;
+//     margin: 15px auto 0 auto;
+//     // margin-left: auto;
+//     // margin-right: auto;
+//     > div{
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         // justify-content: center;  
+//     }
+// }
+// .second_datePicker{
+//     margin-top: 50px;
+// }
+
+.player-item-label {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+.mr_top {
+    margin-top: 10px;
+}
+
+.advanced_filter_toggle {
+    flex-direction: row;
+    display: flex;
+}
+
+.advanced_block{
+    justify-content: flex-start;
+    gap: 5rem;
+}
+.margin_top_filter {
+    margin-top: 30px;
+}
+
+.filterTitle {
+    color: #587370;
+    font-weight: bold
+}
+
+
+
+.mr-right {
+    margin-right: 2% !important;
+}
+
+

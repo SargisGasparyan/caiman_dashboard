@@ -1,0 +1,168 @@
+.filter_title {
+  color: #587370;
+  font-weight: bold;
+}
+
+.margin_top_filter {
+  margin-top: 30px;
+}
+
+.filters_block {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 10px 20px 10px;
+}
+
+.report_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.add_player {
+  margin-top: 20px;
+  padding: 10px 10px;
+}
+
+.universal_table_block {
+  margin-top: 46px;
+}
+
+.filter_items_block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.input_field {
+  width: 33%;
+}
+
+.btn_lock {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.reportHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.copyClipboard {
+  width: 150px;
+}
+
+.settingsLogoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  border-radius: 40px;
+  background: var(--color-grey);
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.headerNameWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgba(128, 128, 128, 0.308);
+  padding: 8px 10px;
+  margin: 2px 0;
+}
+
+.modal__row {
+  background-color: aqua;
+}
+
+.onSaveWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.button__save {
+  width: 35px;
+  margin-top: 10px;
+}
+
+.switchAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding: 0 20px 10px;
+  margin: 0 10px;
+}
+
+.allText {
+  padding: 0 10px;
+}
+/*# sourceMappingURL=PlayersReport.module.css.map */

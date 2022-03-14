@@ -1,0 +1,58 @@
+.table_container{
+    margin-top: 3vmin;
+}
+
+.bets_modal{
+    width: 80vmax;
+   
+}
+
+.bets_table {
+    max-height: 70vh;
+    overflow: scroll;
+}
+
+.modal_close_wrapper{
+    height: 10vmin;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modal_close_button{
+    width: 10vmin;
+}
+
+.modal{
+    max-width: 70vmin;
+    height: 60vh;
+    overflow: scroll;
+}
+
+.datepicker {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.info_cell {
+    text-align: center;
+}
+
+.totalRow {
+    display: flex;
+    width: calc(100% - 4px);
+    background-color: var(--color-font);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    white-space: nowrap;
+    margin: 0 auto;
+    align-items: center;
+    }
+
+    .amountPayout {
+        width: 65%;
+        display: flex;
+        align-items: center;
+    }
