@@ -10,8 +10,8 @@ import PlayersTable from './ReportsComponents/PlayersTable/PlayersTable';
 import { copyTableToClipboard } from '../../../../../helpers/utils';
 import { headers } from '../helpers/constant';
 import s from './PlayersReport.module.scss';
-import settingsLogo from '../../../../../assets/images/Player Settings/settings.svg';
 import { getPlayers } from '../../../../../redux/thunks/playersThunk';
+import { IMAGES } from '../../../../../assets/images';
 
 const paginateCount = 10;
 
@@ -55,7 +55,7 @@ function PlayersReport({
       </div>
       <div className={s.reportHeader}>
         <div className={s.settingsLogoWrapper} onClick={onSettingsClick}>
-          <img alt='settingsLogo' src={settingsLogo} />
+          <img src={IMAGES.settings.src} alt={IMAGES.settings.alt} />
         </div>
 
         <CustomButton onClick={() => copyTableToClipboard('playersId')} className={s.copyClipboard}>
@@ -69,6 +69,7 @@ function PlayersReport({
             headers={activeHeaders}
             tableData={players}
         />
+          {console.log(activeHeaders, players, '------------')}
         </div>
         <div />
         { players.length !== 0

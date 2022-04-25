@@ -1,0 +1,103 @@
+.banner_field__col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 33px;
+}
+
+.banner_field__col input {
+    display: block;
+    width: 100%;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    font-size: 17px;
+    color: var(--grey);
+    padding: 10px 0 10px 15px;
+}
+.field_name {
+    margin-bottom: 5px;
+}
+
+.field_name .field_name__txt {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--grey);
+}
+
+.date_field {
+    display: flex;
+    border: 1px solid #DDDDDD;
+    border-radius: 20px;
+}
+.banner_change_date,
+.banner_change_time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    color: #72747C;
+    border-right: 1px solid #DDDDDD;
+    background: var(--white);
+    padding: 10px;
+}
+
+.banner_change_date:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.banner_change_date:last-child {
+    border-right: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px
+}
+.date_field {
+    display: flex;
+    border: 1px solid #DDDDDD;
+    border-radius: 20px;
+}
+
+.banner_change_date,
+.banner_change_time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    color: #72747C;
+    border-right: 1px solid #DDDDDD;
+    background: var(--white);
+    padding: 10px;
+}
+
+.banner_change_date:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.banner_change_date:last-child {
+    border-right: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px
+}
+.banner_priority {
+    margin-bottom: 0;
+}
+
+.priority_count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    color: var(--grey);
+    background: #F7F8FA 0% 0% no-repeat padding-box;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    padding: 5px;
+}

@@ -24,17 +24,15 @@ CustomMenu.HeaderMenu = ({
      items.map((item, index) => (
        <NavLink
          to={url + item.path + item.childs[0].path}
-         key={`headerMenu_${index}`}
-
-       >
+         key={`headerMenu_${index}`}>
          <div
            className={classnames(s.header_menu_item,
              { [s.hdmi_active]: activeRouteIndex === index })}
            onClick={() => { setActiveRouteIndex(index); }}>
-
            {item.name}
          </div>
-       </NavLink>))
+       </NavLink>
+     ))
       }
     </div>
   );

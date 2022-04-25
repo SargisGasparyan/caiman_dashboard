@@ -9,8 +9,11 @@ import Segments from '../components/MainPage/Routes/Segments/Segments';
 import Transactions from '../components/MainPage/Routes/Transactions/Transactions';
 import StatisticsTransaction from '../components/MainPage/Routes/Statistics/Transaction/StatisticsTransaction';
 import Player from '../components/MainPage/Routes/Player/Player';
+import PromotionPage from '../components/MainPage/Routes/CMS/Promotions/PromotionsPage';
 import Favorite from '../components/MainPage/Routes/Favorite/Favorite';
 import AclResources from '../components/MainPage/Routes/Acl/AclResources/AclResources';
+import Cms from '../components/MainPage/Routes/CMS/cms';
+import Promotions from '../components/MainPage/Routes/CMS/Promotions/Promotions';
 
 const { SUPER_ADMIN, ADMIN } = USER_ROLES;
 const allRoles = Object.values(USER_ROLES);
@@ -52,6 +55,51 @@ export const MAIN_PAGE_ROUTES = [
     roles: [ SUPER_ADMIN, ADMIN ],
     icon: ICONS.favorite,
   },
+  {
+    multi: true,
+    name: 'CMS',
+    path: '/',
+    roles: [ SUPER_ADMIN, ADMIN ],
+    icon: ICONS.reports,
+    childs: [
+      {
+        name: 'Home',
+        path: '/reports_players',
+        Component: ReportsPlayers,
+        roles: [ SUPER_ADMIN, ADMIN ],
+      },
+      {
+        name: 'Promotions',
+        path: 'promotion',
+        Component: PromotionPage,
+        roles: [ SUPER_ADMIN, ADMIN ],
+      },
+      {
+        name: 'Casino',
+        path: '/casino',
+        Component: Players,
+        roles: [ SUPER_ADMIN, ADMIN ],
+      },
+      {
+        name: 'Pop-Ups',
+        path: '/pop_ups',
+        Component: Players,
+        roles: [ SUPER_ADMIN, ADMIN ],
+      },
+      {
+        name: 'Library',
+        path: '/library',
+        Component: Players,
+        roles: [ SUPER_ADMIN, ADMIN ],
+      },
+      {
+        name: 'Footer',
+        path: '/footer',
+        Component: Players,
+        roles: [ SUPER_ADMIN, ADMIN ],
+      },
+    ],
+  },
 
   {
 
@@ -61,6 +109,7 @@ export const MAIN_PAGE_ROUTES = [
     roles: [ SUPER_ADMIN, ADMIN ],
     icon: ICONS.transaction,
   },
+
   {
     name: 'Segments',
     path: '/segments',
@@ -68,33 +117,33 @@ export const MAIN_PAGE_ROUTES = [
     roles: [ SUPER_ADMIN, ADMIN ],
     icon: ICONS.segments,
   },
-  {
-    multi: true,
-    name: 'Reports',
-    path: '/reports',
-    roles: [ SUPER_ADMIN, ADMIN ],
-    icon: ICONS.reports,
-    childs: [
-      {
-        name: 'Players Report',
-        path: '/players',
-        Component: ReportsPlayers,
-        roles: [ SUPER_ADMIN, ADMIN ],
-      },
-      {
-        name: 'Games Report',
-        path: '/games',
-        Component: Players,
-        roles: [ SUPER_ADMIN, ADMIN ],
-      },
-      {
-        name: 'Stakes Report',
-        path: '/stakes',
-        Component: Players,
-        roles: [ SUPER_ADMIN, ADMIN ],
-      },
-    ],
-  },
+  // {
+  //   multi: true,
+  //   name: 'Reports',
+  //   path: '/reports',
+  //   roles: [ SUPER_ADMIN, ADMIN ],
+  //   icon: ICONS.reports,
+  //   childs: [
+  //     {
+  //       name: 'Players Report',
+  //       path: '/players',
+  //       Component: ReportsPlayers,
+  //       roles: [ SUPER_ADMIN, ADMIN ],
+  //     },
+  //     {
+  //       name: 'Games Report',
+  //       path: '/games',
+  //       Component: Players,
+  //       roles: [ SUPER_ADMIN, ADMIN ],
+  //     },
+  //     {
+  //       name: 'Stakes Report',
+  //       path: '/stakes',
+  //       Component: Players,
+  //       roles: [ SUPER_ADMIN, ADMIN ],
+  //     },
+  //   ],
+  // },
   {
     multi: true,
     name: 'Statistics',
@@ -156,6 +205,52 @@ export const MAIN_PAGE_ROUTES = [
     roles: [ SUPER_ADMIN, ADMIN ],
     icon: ICONS.acl,
   },
+  // {
+  //   multi: true,
+  //   name: 'CMS',
+  //   path: '/cms',
+  //   Component: Cms,
+  //   roles: [ SUPER_ADMIN, ADMIN ],
+  //   icon: ICONS.cms,
+  //   childs: [
+  //     {
+  //       name: 'Home',
+  //       path: '/home',
+  //       Component: Cms,
+  //       roles: [ ADMIN ],
+  //     },
+  //     {
+  //       name: 'Promotions',
+  //       path: '/promotions',
+  //       Component: Promotions,
+  //       roles: [ SUPER_ADMIN, ADMIN ],
+  //     },
+  //     {
+  //       name: 'Casino',
+  //       path: '/casino',
+  //       Component: Cms,
+  //       roles: [ SUPER_ADMIN, ADMIN ],
+  //     },
+  //     {
+  //       name: 'Pop-ups',
+  //       path: '/popUps',
+  //       Component: Cms,
+  //       roles: [ SUPER_ADMIN, ADMIN ],
+  //     },
+  //     {
+  //       name: 'Library',
+  //       path: '/library',
+  //       Component: Cms,
+  //       roles: [ SUPER_ADMIN, ADMIN ],
+  //     },
+  //     {
+  //       name: 'Footer',
+  //       path: '/footer',
+  //       Component: Cms,
+  //       roles: [ SUPER_ADMIN, ADMIN ],
+  //     },
+  //   ],
+  // },
   {
     name: 'ACL Resources',
     path: '/aclManagment',

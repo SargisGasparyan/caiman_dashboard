@@ -1,17 +1,14 @@
 import { createAction, createReducer } from '../../helpers/redux';
-
 // ACTION TYPES
 const ADD_TAB = 'ADD_TAB';
 const ACTIVE_TAB = 'ACTIVE_TAB';
 const REMOVE_TABS = 'REMOVE_TABS';
 const REMOVE_TAB = 'REMOVE_TAB';
-
 // ACTIONS
 export const addTabAction = createAction(ADD_TAB);
 export const activeTabAction = createAction(ACTIVE_TAB);
 export const removeTabsAction = createAction(REMOVE_TABS);
 export const removeTab = createAction(REMOVE_TAB);
-
 // REDUCER
 const initialState = {
   partners: [
@@ -21,6 +18,15 @@ const initialState = {
     { partner: 'PMBETKE', tabs: [], activeTab: '' },
     { partner: 'PMBETZM', tabs: [], activeTab: '' },
     { partner: 'MLOTT', tabs: [], activeTab: '' },
+    { partner: 'TODOBOOM', tabs: [], activeTab: '' },
+    { partner: 'BETWIM', tabs: [], activeTab: '' },
+    { partner: 'YULDUZBET', tabs: [], activeTab: '' },
+    { partner: 'CASHBAHIS', tabs: [], activeTab: '' },
+    { partner: 'PINNAPPLE', tabs: [], activeTab: '' },
+    { partner: 'PMBETING', tabs: [], activeTab: '' },
+    { partner: 'SHOOT', tabs: [], activeTab: '' },
+    { partner: 'SPINGAME', tabs: [], activeTab: '' },
+    { partner: 'BONUSBET', tabs: [], activeTab: '' },
   ],
 };
 

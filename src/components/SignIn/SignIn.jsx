@@ -7,6 +7,7 @@ import { setUserData } from '../../redux/ducks/userDuck';
 import { removeErrorMessage } from '../../redux/ducks/errorDuck';
 import s from './SignIn.module.scss';
 import CustomInput from '../Custom/CustomInput/CustomInput';
+import { addTabAction, activeTabAction } from '../../redux/ducks/controlTab';
 import CustomButton from '../Custom/CustomButton/CustomButton';
 import Spinner from '../Common/Loaders/Spinner/Spinner';
 import { LOADING_IDS } from '../../constants/ids';
@@ -55,7 +56,8 @@ function SignIn() {
  />
           <CustomButton
             className={s.button}
-            disabled={isDisabled}>
+            disabled={isDisabled}
+            onClick={submitHandler}>
             { isLoading ? <Spinner /> : t('Sign In') }
           </CustomButton>
         </form>
@@ -65,6 +67,14 @@ function SignIn() {
 
   function submitHandler(e) {
     if (isDisabled) return;
+    // dispatch(addTabAction({
+    //   partner: `${localStorage.getItem('partner_name')}`,
+    //   text: 'Dashboard',
+    // }));
+    // dispatch(activeTabAction({
+    //   partner: `${localStorage.getItem('partner_name')}`,
+    //   tabName: 'Dashboard',
+    // }));
     e.preventDefault();
     dispatch(loginThunk(formData));
     errorInfo && dispatch(removeErrorMessage());

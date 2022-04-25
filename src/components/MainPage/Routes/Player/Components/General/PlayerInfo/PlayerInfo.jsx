@@ -62,6 +62,7 @@ function PlayerInfo() {
 
   return (
     <div className={classNames('container-fluid')}>
+      <h1>Player info</h1>
       <div className={classNames('row')}>
         <div className={classNames('col', s.customCol)}>
           <div className={classNames('container', s.customContainer)}>

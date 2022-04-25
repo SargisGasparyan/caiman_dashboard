@@ -1,8 +1,19 @@
 const ForthWidgetExample = () => (
-  <div style={{
-    width: '50%', height: 100, border: '1px solid black', borderRadius: 8,
-  }}>
-    Forth widget
+  <div>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+      </tr>
+      <tr>
+        <td>Cillian</td>
+        <td>Murphy</td>
+      </tr>
+      <tr>
+        <td>Thomas</td>
+        <td>Shelby</td>
+      </tr>
+    </table>
   </div>
 );
 

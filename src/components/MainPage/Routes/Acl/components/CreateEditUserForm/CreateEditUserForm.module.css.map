@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,QAAQ;CAC1B",
-    "sources": [
-        "CreateEditUserForm.module.scss"
-    ],
-    "names": [],
-    "file": "CreateEditUserForm.module.css"
-}

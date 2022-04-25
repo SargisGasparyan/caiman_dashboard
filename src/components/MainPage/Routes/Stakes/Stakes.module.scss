@@ -1,11 +1,17 @@
 .stakes__title {
   font-size: 16px;
   color: var(--color-black);
+  // background: white;
+  // border-bottom: 3px solid var(--color-font);
+  // padding: 4px 140px 4px 11px;
+  // border-radius: 8px 8px 0 0;
+  width: fit-content;
+  margin: 0;
 }
 
 .stakes__container {
   background: var(--color-white);
-  border-radius: 5px 5px 0 0;
+  border-radius: 0 5px 0 0;
   padding: 10px;
   font-size: 13px;
   display: flex;
@@ -13,20 +19,20 @@
   justify-content: space-between;
 
   .title {
-    margin: 5px 0;
-    letter-spacing: 1px;
-    font-size: 17px;
+    font-size: 14px;
   }
   .container {
-    padding: 10px 0;
+
     .interval_container {
       display: flex;
-      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 10px;
     }
 
     .selections {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 10px;
     }
 
     .content_container{
@@ -54,10 +60,10 @@
   }
 
   .additionalFilters {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    // width: 60%;
+    // display: flex;
+    // justify-content: space-between;
+    margin-top: 10px;
     
     .kind {
       table { 

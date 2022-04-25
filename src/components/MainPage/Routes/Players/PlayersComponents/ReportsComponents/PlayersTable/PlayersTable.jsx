@@ -66,6 +66,7 @@ function PlayersTable({ tableData, headers }) {
           })}
         </CustomTable.Row>
       </CustomTable.Header>
+      {console.log('111111111111111111', tableData, '222222222222222', headers, '+++++++++++++++++++++++++++++++++++===')}
       <CustomTable.Body>
         {sortedData.map(row => (
           <CustomTable.Row
@@ -74,7 +75,9 @@ function PlayersTable({ tableData, headers }) {
            >
             {Object.values(headers).map((cell, idx) => (
               (cell && !row[cell.key] && <CustomTable.Cell key={idx}>-</CustomTable.Cell>)
-              || ((cell && cell.type && <CustomTable.Cell key={idx}>{moment(row[cell.key]).format('DD-MM-YYYY')}</CustomTable.Cell>)
+              || ((cell && cell.type
+              && <CustomTable.Cell key={idx}>{moment(row[cell.key])
+                .format('DD-MM-YYYY')}</CustomTable.Cell>)
               || (cell && <CustomTable.Cell key={idx}>
                   {row[cell.key]}
                 </CustomTable.Cell>))

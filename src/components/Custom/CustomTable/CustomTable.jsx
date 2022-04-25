@@ -17,12 +17,15 @@ import s from './CustomTable.module.scss';
 const CustomTable = ({
   data, children, loading, isEmpty, className, bgColor, ...props
 }) => (
-  <div className={s.root}>
+  <>
     {loading && <div className={s.tableLoading}>
       <CubeLoader size={25} />
       </div>}
     <div className={classnames(s.tableWrapper, { hidden: loading || isEmpty })}>
-      <table className={classnames(s.table, { [className]: className })} {...props}>
+      <table
+        className={classnames(s.table, s.promotions_table,
+          { [className]: className })}
+        {...props}>
         {children}
       </table>
     </div>
@@ -31,23 +34,27 @@ const CustomTable = ({
         No Data To Display
       </div>
       </div>}
-  </div>
+  </>
 );
 
 CustomTable.Header = ({ children, className, ...props }) => (
-  <thead className={classnames(s.header, { [className]: className })} {...props}>{children}</thead>
+  <thead
+    className={classnames(s.thead_dark,
+      { [className]: className })}
+    {...props}>{children}</thead>
 );
 
 CustomTable.Row = ({ children, className, ...props }) => (
   <tr
-    className={classnames(s.row, { [className]: className })}
+
+    className={classnames({ [className]: className })}
     {...props}>{children}</tr>
 );
 
 CustomTable.HeaderCell = ({
-  children, sort, className, sortKey, ...props
+  clas, children, sort, className, sortKey, ...props
 }) => (
-  <th className={classnames(s.headerCell, { 'c-p': sort, [className]: className })} {...props}>
+  <th scope="col" className={classnames(s[className], s.className, { 'c-p': sort, [className]: className })} {...props}>
     <div className={'flex-c-c'}>
       <div>
         {children}
@@ -56,19 +63,19 @@ CustomTable.HeaderCell = ({
         <div className={classnames(s.sortIcon, {
           [s[sort.top ? 'upIcon' : 'downIcon']]: sort.key === sortKey,
         })} />
-      </div>}
+        </div>}
     </div>
   </th>
 );
 
 CustomTable.Body = ({ children, className, ...props }) => (
-  <tbody className={classnames(s.body, { [className]: className })} {...props}>{children}</tbody>
+  <tbody className={classnames({ [className]: className })} {...props}>{children}</tbody>
 );
 
 CustomTable.Cell = ({
   children, className, bgColor, ...props
 }) => (
-  <td style={{ backgroundColor: `${bgColor || '#E9E9E9'}` }} className={classnames(s.cell, { [className]: className })} {...props}>{children}</td>
+  <td className={classnames({ [className]: className })} {...props}>{children}</td>
 );
 
 export default CustomTable;

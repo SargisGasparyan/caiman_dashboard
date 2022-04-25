@@ -7,7 +7,7 @@
 }
 
 .main {
-  padding-top: 60px;
+  padding-top: 90px;
   display: flex;
   height: 100%;
   overflow: hidden;
@@ -18,10 +18,13 @@
   width: 100%;
   max-width: 100%;
   overflow: hidden auto;
-  padding: 20px 30px;
+  // padding: 0 10px;
+  padding: 0px;
   position: relative;
+  background-color: var(--color-light-grey);
 }
 
 // .rightSideActive {
 //   padding: 30px 115px;
 // }
+

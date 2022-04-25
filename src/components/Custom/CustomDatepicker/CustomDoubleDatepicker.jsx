@@ -11,7 +11,7 @@ const CustomSingleDatepicker = ({
       className={s.root}
       ref={ref}
       onClick={onClick}
-      style={{ width: width || 200, borderRadius: '5px' }}>
+      style={{ width: width || 150, borderRadius: '15px 0 0 15px' }}>
       {value
         ? <div className={s.date}>{value}</div>
         : <div className={s.placeholder}>{placeholder}</div>
@@ -21,7 +21,7 @@ const CustomSingleDatepicker = ({
     </div>
   ));
   const EndCustomInput = forwardRef(({ value, onClick, placeholder }, ref) => (
-    <div className={s.root} ref={ref} onClick={onClick} style={{ width: width || 200, borderRadius: '5px' }}>
+    <div className={s.root} ref={ref} onClick={onClick} style={{ width: width || 150, borderRadius: '0 15px 15px 0' }}>
       {value
         ? <div className={s.date}>{value}</div>
         : <div className={s.placeholder}>{placeholder}</div>
@@ -39,11 +39,11 @@ const CustomSingleDatepicker = ({
   };
 
   return (
-    <div className={classNames(s.wrapper, 'container')} style={{ padding: 0, margin: '10px 10px 0 10px', ...style }}>
+    <div className={classNames(s.wrapper, 'container')} style={{ padding: 0, ...style }}>
       {label !== '' ? <div className='customLabel' style={{ textAlign: 'center' }}>{label}</div> : null }
 
       <div className={classNames(s.flex, 'row')}>
-        <div className='col' style={{ padding: 0 }}>
+        <div className='col-auto' style={{ padding: 0 }}>
           <DatePicker
             selectsStart
             selected={props.startDate}
@@ -57,7 +57,7 @@ const CustomSingleDatepicker = ({
             {...props}
           />
         </div>
-        <div className='col' style={{ padding: 0 }}>
+        <div className='col-auto' style={{ padding: 0 }}>
           <DatePicker
             selectsEnd
             selected={props.endDate}

@@ -9,7 +9,7 @@ const TabBar = () => {
   const activePartner = partners.find(item => item.partner === `${localStorage.getItem('partner_name')}`);
 
   return (
-    <div style={{ display: 'flex', margin: '10px' }}>
+    <div style={{ display: 'flex', margin: '18px 40px' }}>
       {activePartner && activePartner.tabs.map((item, index) => (
         <>
           <Tab item={item} index={index} />

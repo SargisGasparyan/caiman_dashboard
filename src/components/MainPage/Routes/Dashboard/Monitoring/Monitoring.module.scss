@@ -1,0 +1,107 @@
+
+.container {
+    margin-top: 20px;
+    padding: 0;
+    
+    .monitoringHeader {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        margin: 0;
+
+        .namePart {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            color: #72747c;
+
+            p {
+                font-size: 22px;
+                text-transform: capitalize;
+                color: var(--color-icon-grey);
+                margin-left: 5px;
+            }
+        }
+
+        .updatePart {
+            @extend .namePart;
+
+            p {
+                font-size: 15px;
+                text-transform: capitalize;
+                color: var(--color-icon-grey);
+            }
+
+            img {
+                padding-left: 10px;
+            }
+        }
+    }  
+    
+    .monitoring__information {
+        .monitoring__list {
+            padding: 0 15px 0 0;
+
+            .monitoring_list__item {
+                display: flex;
+                justify-content: space-between;
+                height: 80px;
+                padding-right: 0;
+                margin-bottom: 15px;
+
+                .monitoring_item__menu {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    background-color: #F7F8FA;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 10px;
+                    padding: 15px;
+
+                    .monitoring_menu__information {
+                        display: flex;
+                        align-items: center;
+
+                        .monitoring_menu__title {
+                            display: flex;
+                            align-items: center;
+
+                            button {
+                                display: inline-flex;
+                                align-items: center;
+                                background: transparent;
+                                border: none;
+                            }
+
+                            .monitoring__type {
+                                color: var(--color-icon-grey);
+                                padding: 0 4px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    .monitoring__total{
+                        display: flex;
+                        align-items: center;
+
+                        div {
+                            font-size: 16px;
+                            text-transform: capitalize;
+                            color: var(--color-icon-grey);
+                            margin-right: 5%;
+
+                            span {
+                                font-size: 22px;
+                                font-weight: bold;
+                                color: var(--color-green);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

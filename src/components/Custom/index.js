@@ -1,7 +1,11 @@
 export { default as CustomButton } from './CustomButton/CustomButton';
+export { default as CustomButtonPromotion } from './CustomButtonPromotion/CustomButtonPromotion';
+export { default as CustomAddButton } from './CustomAddButton/CustomAddButton';
 export { default as CustomSingleDatepicker } from './CustomDatepicker/CustomSingleDatepicker';
 export { default as CustomDoubleDatepicker } from './CustomDatepicker/CustomDoubleDatepicker';
 export { default as CustomInput } from './CustomInput/CustomInput';
+export { default as CustomTextarea } from './CustomTextarea/CustomTextarea';
+export { default as CustomLine } from './CustomLine/CustomLine';
 export { default as CustomModal } from './CustomModal/CustomModal';
 export { default as CustomSelect } from './CustomSelect/CustomSelect';
 export { default as CustomSwitcher } from './CustomSwitcher/CustomSwitcher';

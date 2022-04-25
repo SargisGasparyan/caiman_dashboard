@@ -9,7 +9,8 @@ const CustomFromToInput = ({
   const { t } = useTranslation();
   return (
     <div style={{ ...style, margin: '10px 10px 0 10px' }} className='container-fluid'>
-      {label !== '' ? <div className='customLabel' style={{ textAlign: 'center' }}>{label}</div> : null }
+      {label !== '' ? <div className={classNames('customLabel', 'row')} style={{ textAlign: 'center' }}>
+        <div className='col' style={{ padding: 0 }}>{label}</div></div> : null }
       <div className={classNames('flex', 'row')}>
         <div className='col-auto' style={{ padding: 0 }}>
           <input

@@ -5,15 +5,15 @@
 .root {
   display: flex;
   border: 1px solid #a2a2a24f;
-  border-radius: 5px;
-  box-shadow: 1px 1px 7px 2px #a2a2a24f;
-  background-color: white;
-  padding: 8px 15px 6px;
+  // border-radius: 5px;
+  // box-shadow: 1px 1px 7px 2px #a2a2a24f;
+  background-color: #f7f8fa;
+  padding: 8px 0px 6px;
   justify-content: space-between;
   align-items: center;
   color: var(--color-red);
   font-weight: bold;
-  font-size: 13px;
+  font-size: 13x;
   cursor: pointer;
   i {
     // display: block;
@@ -23,7 +23,7 @@
 }
 
 .root:hover {
-  border: 1px solid var(--color-red);
+  border: 1px solid var(--color-active-blue);
 }
 
 .flex {
@@ -42,7 +42,7 @@
 }
 
 .calendarIcon {
-  background-image: url('../../../assets/images/calendar.png');
+  background-image: url('../../../assets/images/blueCalendar.svg');
   width: 16px;
   height: 15px;
   background-position: center;

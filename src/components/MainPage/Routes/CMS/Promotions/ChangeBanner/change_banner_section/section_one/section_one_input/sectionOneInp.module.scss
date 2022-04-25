@@ -1,0 +1,26 @@
+.banner_field__col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 33px;
+}
+
+.banner_field__col input {
+    display: block;
+    width: 100%;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    font-size: 17px;
+    color: var(--grey);
+    padding: 10px 0 10px 15px;
+}
+.field_name {
+    margin-bottom: 5px;
+}
+
+.field_name, .field_name__txt {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--grey);
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import moment from 'moment';
 import { useDispatch, useSelector } from 'react-redux';
+import classNames from 'classnames';
 import { useTranslation } from '../../../../../context/LanguageProvider';
 import s from '../Stakes.module.scss';
 import CustomSelect from '../../../../Custom/CustomSelect/CustomSelect';
@@ -10,42 +11,21 @@ import CustomButton from '../../../../Custom/CustomButton/CustomButton';
 import {
   fromToInputs,
   inputsPart,
-  intervalSelection, kindRadioButtons, moneySelection, payoutOptionSelection, statusSelection,
+  intervalSelection, moneySelection, payoutOptionSelection, statusSelection,
 } from '../constants';
 import {
-  CustomDoubleTimepicker,
   CustomFromToInput, CustomRadioButton, usePagination,
 } from '../../../../Custom';
 import filter from '../../../../../assets/images/balanceFilter.svg';
 import arrow from '../../../../../assets/images/arrow-down-red.svg';
 import { getStakesData } from '../../../../../redux/thunks/stakesThunk';
-
-const initialState = {
-  interval: null,
-  time: null,
-  currency: null,
-  from: '',
-  to: '',
-  playerId: '',
-  eventId: '',
-  shop_id: '',
-  packageId: '',
-  payoutOption: null,
-  contentCount: [ null, null ],
-  amount: [ null, null ],
-  win: [ null, null ],
-  status: null,
-  sport: null,
-  source: null,
-  ticketKind: null,
-  market_type: null,
-};
+import StakesFilterKind from '../StakesFilterKinds/StakesFilterKind';
+import { initialState } from './helpers.js';
 
 function StakesFilter() {
   const { t } = useTranslation();
   const [ state, setState ] = useState(initialState);
   const [ arrowDown, setArrowDown ] = useState(false);
-  // const [ parameters, setParameters ] = useState();
   const dispatch = useDispatch();
   const { count } = useSelector(stakesState => stakesState.stakesReducer);
   const {
@@ -78,57 +58,59 @@ function StakesFilter() {
         typeof state[item] === 'object' && state[item].value ? params[item] = state[item].value : params[item] = state[item];
       }
     }
-    console.log(params);
-    // setParameters(params);
-    // setPage(1);
     dispatch(getStakesData(params));
   };
-
-  // console.log(state);
 
   return (
     <>
       <div className={s.stakes__container}>
         <div className={s.title}>{t('Filter')}</div>
-        <div className={s.container}>
-          <div className={s.interval_container}>
-            <CustomSelect
-              width={200}
-              label={t('Ticket status')}
-              options={intervalSelection}
-              style={{ marginRight: '20px' }}
-              value={state.interval}
-              onChange={item => setState({ ...state, interval: item })}
+        <div className={classNames(s.container, 'container-fluid')}>
+          <div className={classNames(s.interval_container, 'row')}>
+            <div className='col-auto'>
+              <CustomSelect
+                width={200}
+                label={t('Ticket status')}
+                options={intervalSelection}
+                style={{ marginRight: '20px' }}
+                value={state.interval}
+                onChange={item => setState({ ...state, interval: item })}
+           />
+            </div>
+            <div className='col-auto'>
+              <CustomDoubleDatepicker
+                style={{ marginRight: '20px' }}
+                label={'Interval'}
+                startDate={state.from.label}
+                endDate={state.to.label}
+                setStartDate={(value) => { setDate(value, 'from'); }}
+                setEndDate={(value) => { setDate(value, 'to'); }}
           />
-            {/* <CustomDoubleTimepicker /> */}
-            <CustomDoubleDatepicker
-              style={{ marginRight: '20px' }}
-              label={'Interval'}
-              startDate={state.from.label}
-              endDate={state.to.label}
-              setStartDate={(value) => { setDate(value, 'from'); }}
-              setEndDate={(value) => { setDate(value, 'to'); }}
-          />
+            </div>
           </div>
-          <div className={s.selections}>
-            <CustomSelect
-              width={200}
-              label={t('Money')}
-              options={moneySelection}
-              style={{ marginRight: '20px' }}
-              value={state.currency}
-              onChange={item => setState({ ...state, currency: item })}
+          <div className={classNames(s.selections, 'row')}>
+            <div className='col'>
+              <CustomSelect
+                width={200}
+                label={t('Money')}
+                options={moneySelection}
+                style={{ marginRight: '20px' }}
+                value={state.currency}
+                onChange={item => setState({ ...state, currency: item })}
           />
-            { inputsPart.map((item, idx) => <CustomInput
-              label={item.label}
-              key={idx}
-              width={200}
-              value={state[item.key]}
-              onChange={e => setState({ ...state, [item.key]: e.target.value })}
-          />)}
+            </div>
+            { inputsPart.map((item, idx) => <div className='col'>
+              <CustomInput
+                label={item.label}
+                key={idx}
+                width={200}
+                value={state[item.key]}
+                onChange={e => setState({ ...state, [item.key]: e.target.value })}
+          />
+            </div>)}
           </div>
-          <div className={s.content_container}>
-            {fromToInputs.map((item, idx) => <CustomFromToInput
+          {/* <div className={classNames(s.content_container, 'row')}>
+            {fromToInputs.map((item, idx) => <div className='col-auto'><CustomFromToInput
               label={item.label}
               placeholders={{ first: 'Min', second: 'Max' }}
               width={150}
@@ -144,8 +126,8 @@ function StakesFilter() {
                 ...state,
                 [item.key]: [ state[item.key][0], Number(e.target.value) ],
               })}
-            />)}
-          </div>
+            /></div>)}
+          </div> */}
         </div>
       </div>
       <div className={s.filterRow}>
@@ -157,121 +139,25 @@ function StakesFilter() {
             <img src={filter} alt={'Filter svg'} width={15} />
           </div>
         </div>
-        {arrowDown && <div className={s.additionalFilters}>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <CustomSelect
-              label={'Status'}
-              options={statusSelection}
-              value={state.status}
-              onChange={item => setState({ ...state, status: item })}
+        {arrowDown && <div className={classNames(s.additionalFilters, 'container-fluid')}>
+          <div className='row'>
+            <div style={{ display: 'flex', flexDirection: 'column' }} className='col-auto'>
+              <CustomSelect
+                width={200}
+                label={'Status'}
+                options={statusSelection}
+                value={state.status}
+                onChange={item => setState({ ...state, status: item })}
+                style={{ marginBottom: 10 }}
             />
-            <CustomSelect
-              label={'Payout Options'}
-              options={payoutOptionSelection}
-              value={state.payoutOption}
-              onChange={item => setState({ ...state, payoutOption: item })}
+              <CustomSelect
+                label={'Payout Options'}
+                options={payoutOptionSelection}
+                value={state.payoutOption}
+                onChange={item => setState({ ...state, payoutOption: item })}
             />
-          </div>
-          <div className={s.kind}>
-            <table>
-              <caption>{t('Kind')}</caption>
-              <tr>
-                <td><CustomRadioButton
-                  label={'All'}
-                  name={'sport'}
-                  id={'allLive'}
-                  checked={!state.sport && 'allLive'}
-                  onRadioChange={onRadioChange}
-                /></td>
-                <td><CustomRadioButton
-                  label={'Live'}
-                  name={'sport'}
-                  id={'live'}
-                  checked={state.sport}
-                  onRadioChange={onRadioChange}
-                /></td>
-                <td><CustomRadioButton
-                  label={'Prematch'}
-                  name={'sport'}
-                  id={'prematch'}
-                  checked={state.sport}
-                  onRadioChange={onRadioChange}
-                /></td>
-              </tr>
-              <tr>
-                <td><CustomRadioButton
-                  label={'All'}
-                  name={'source'}
-                  id={'allInternet'}
-                  checked={!state.source && 'allInternet'}
-                  onRadioChange={onRadioChange}
-                /></td>
-                <td><CustomRadioButton
-                  label={'Internet'}
-                  name={'source'}
-                  id={'internet'}
-                  checked={state.source}
-                  onRadioChange={onRadioChange}
-                /></td>
-                <td><CustomRadioButton
-                  label={'Shop'}
-                  name={'source'}
-                  id={'shop'}
-                  checked={state.source}
-                  onRadioChange={onRadioChange}
-                /></td>
-              </tr>
-              <tr>
-                <td><CustomRadioButton
-                  label={'All'}
-                  name={'ticketKind'}
-                  id={'allExpress'}
-                  checked={!state.ticketKind && 'allExpress'}
-                  onRadioChange={onRadioChange}
-                /></td>
-                <td><CustomRadioButton
-                  label={'Express'}
-                  name={'ticketKind'}
-                  id={'express'}
-                  checked={state.ticketKind}
-                  onRadioChange={onRadioChange}
-                /></td>
-                <td><CustomRadioButton
-                  label={'Ordinar'}
-                  name={'ticketKind'}
-                  id={'ordinar'}
-                  checked={state.ticketKind}
-                  onRadioChange={onRadioChange}
-                /></td>
-              </tr>
-              <tr>
-                <td><CustomRadioButton
-                  label={'All'}
-                  name={'market_type'}
-                  id={'allStatistics'}
-                  checked={!state.market_type && 'allStatistics'}
-                  onRadioChange={onRadioChange}
-                /></td>
-                <td><CustomRadioButton
-                  label={'Statistics'}
-                  name={'market_type'}
-                  id={'statistics'}
-                  checked={state.market_type}
-                  onRadioChange={onRadioChange}
-                /></td>
-              </tr>
-              {/* {Object.keys(kindRadioButtons).map((item, idx) => <tr>
-                {kindRadioButtons[item].map((rowItem, index) => <td>
-                  <CustomRadioButton
-                    label={rowItem.label}
-                    name={rowItem.name}
-                    id={rowItem.id}
-                    checked={!state[rowItem.name] && rowItem.id}
-                    onRadioChange={onRadioChange}
-                />
-                </td>)}
-              </tr>)} */}
-            </table>
+            </div>
+            <StakesFilterKind state={state} onChange={onRadioChange} className='col-auto' />
           </div>
         </div>}
       </div>

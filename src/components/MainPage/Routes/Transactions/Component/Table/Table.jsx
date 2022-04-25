@@ -5,11 +5,11 @@ import {
   CustomTable, CustomPagination, CustomButton,
 } from '../../../../../Custom';
 import { LOADING_IDS } from '../../../../../../constants/ids';
-import settingsLogo from '../../../../../../assets/images/Player Settings/settings.svg';
 import s from './Table.module.scss';
 import fS from '../Filters/Filters.module.scss';
 import { copyTableToClipboard } from '../../../../../../helpers/utils';
 import SettingsModale from './SettingsModale/SettingsModale';
+import { IMAGES } from '../../../../../../assets/images/index.js';
 
 const { PLAYERS } = LOADING_IDS;
 
@@ -68,7 +68,7 @@ function Table({
           {
            type === 'balance'
            && <div className={s.settingsLogoWrapper} onClick={onSettingsClick}>
-             <img alt='settingsLogo' src={settingsLogo} />
+             <img alt={IMAGES.settings.alt} src={IMAGES.settings.src} />
            </div>
           }
 

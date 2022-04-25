@@ -3,70 +3,89 @@ import { NavLink, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import classnames from 'classnames';
 import s from './Tab.module.scss';
-import { activeTabAction } from '../../../../../redux/ducks/controlTab';
+import { activeTabAction, removeTab } from '../../../../../redux/ducks/controlTab';
 
-const Tab = ({ item }) => {
+const Tab = ({ item, index }) => {
   const currentParnerLocal = `${localStorage.getItem('partner_name')}`;
   const dispatch = useDispatch();
   const history = useHistory();
   const partners = useSelector(state => state.tabReducers.partners);
   const current_partner = partners.find(obj => obj.partner === currentParnerLocal);
+
   const todoSwitcher = (val) => {
-    if (val === 'ACL') {
-      return 'AclUsers';
+    switch (val) {
+      case 'ACL':
+        return 'AclUsers';
+      case 'ACL Resources':
+        return 'aclManagment';
+      case 'Promotions':
+        return 'promotion';
+      case 'Create new promo':
+        return 'create_new_promo';
+      case 'Change banner':
+        return 'change_banner';
+      default:
+        return val;
     }
-    if (val === 'ACL Resources') {
-      return 'aclManagment';
-    }
-    return val;
   };
+
   const changeActivePage = (page) => {
     if (current_partner.activeTab === page) {
       const currentPage = window.location.pathname.split('/')[1];
-      const curent = currentPage;
+      // eslint-disable-next-line prefer-const
+      let curent = currentPage;
+      // eslint-disable-next-line no-nested-ternary
+      page === 'ACL Resources' ? curent = 'ACL Resources' : page === 'ACL' ? curent = 'ACL' : curent = page;
       const tabIndex = current_partner.tabs.indexOf(curent);
       if (current_partner.tabs[tabIndex + 1]) {
         dispatch(activeTabAction({
           partner: currentParnerLocal,
           tabName: current_partner.tabs[tabIndex + 1],
         }));
-        history.push(current_partner.tabs[tabIndex + 1]);
+        history.push(todoSwitcher(current_partner.tabs[tabIndex + 1]));
       } else {
         dispatch(activeTabAction({
           partner: currentParnerLocal,
           tabName: current_partner.tabs[tabIndex - 1],
         }));
-        history.goBack();
+        history.push(todoSwitcher(current_partner.tabs[tabIndex - 1]));
+        // history.goBack();
       }
     }
   };
+
   return (
-    <div>
+    <div
+      key={index}
+      style={{
+        display: 'flex', alignItems: 'center',
+      }}>
       <NavLink
+        className={classnames({
+          [s.active]: current_partner.activeTab === item,
+          [s.not_active]: current_partner.activeTab !== item,
+        })}
         onClick={() => {
           dispatch(activeTabAction({
             partner: currentParnerLocal,
             tabName: item,
           }));
         }}
-        style={{
-          margin: '10px',
-          color: 'gray',
-          borderBottom: `${current_partner.activeTab === item ? '3px solid red' : '1px solid black'}`,
-          width: '150px',
-          textAlign: 'center',
-        }}
         to={() => todoSwitcher(item)}>{item}
-        {/* <h1 onClick={(e) => {
-                                e.preventDefault();
-                                e.stopPropagation();
-                                changeActivePage(item);
-                                dispatch(removeTab({
-                                  partner: `${localStorage.getItem('partner_name')}`,
-                                  index,
-                                }));
-                              }}>X</h1> */}
       </NavLink>
+      <span
+        style={{
+          marginRight: '35px', marginLeft: '10px', cursor: 'pointer', color: `${current_partner.activeTab === item ? 'green' : ''}`,
+        }}
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          changeActivePage(item);
+          dispatch(removeTab({
+            partner: currentParnerLocal,
+            index,
+          }));
+        }}>&#10005;</span>
     </div>
   );
 };

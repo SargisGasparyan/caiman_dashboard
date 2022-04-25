@@ -1,0 +1,15 @@
+
+.all {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.headerNameWrapper {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(128, 128, 128, 0.308);
+    padding: 8px 10px;
+    margin: 2px 0;
+    font-size: 14px;
+}

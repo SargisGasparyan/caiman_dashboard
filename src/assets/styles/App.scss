@@ -1,3 +1,229 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Noto Sans'
+}
+
+p {
+    margin: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/**************------scrollbar------*****************/
+/* Chrome, safari */
+*::-webkit-scrollbar {
+	width: 0px;
+    height: 2px;
+}
+
+/* *::-webkit-scrollbar-thumb {
+	background-color: var(--grey);
+} */
+*::-webkit-scrollbar-track {
+  /* background: #FFFFFF70; */
+  border: none;        /* color of the tracking area */
+}
+
+/* Firefox */
+.selector {
+	scrollbar-width: none;
+}
+/**************------END of scrollbar------*****************/
+
+
+// -----------listbox------------
+  
+[role="listbox"] {
+    margin: 1em 0 0;
+    padding: 0;
+    min-height: 18em;
+    border: 1px solid #aaa;
+    background: white;
+}
+
+[role="listbox"]#ss_elem_list {
+    position: relative;
+    max-height: 18em;
+    overflow-y: auto;
+}
+
+[role="listbox"] + *,
+.listbox-label + * {
+    margin-top: 1em;
+}
+
+[role="group"] {
+    margin: 0;
+    padding: 0;
+}
+
+[role="group"] > [role="presentation"] {
+    display: block;
+    margin: 0;
+    padding: 0 0.5em;
+    font-weight: bold;
+    line-height: 2;
+    background-color: #ccc;
+}
+
+[role="option"] {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    font-size: 14px;
+    color: #72747C;
+    line-height: 1.8em;
+    padding: 0 1em 0 1.5em;
+}
+
+[role="option"]:hover {
+    background-color: var(--grey);
+    color: var(--grey--dark);
+}
+
+[role="option"].focused {
+    background-color: var(--blue--light);
+    color: var(--grey--dark);
+}
+
+[role="option"][aria-selected="true"]::before {
+    position: absolute;
+    left: 0.5em;
+    content: "✓";
+}
+
+button[aria-haspopup="listbox"] {
+    position: relative;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #72747C;
+    text-align: left;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+button[aria-haspopup="listbox"]::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    width: 9px;
+    height: 9px;
+    background: transparent;
+    text-indent: -9999px;
+    border-top: 2px solid #72747C;
+    border-left: 2px solid #72747C;
+    transition: all 250ms ease-in-out;
+    text-decoration: none;
+    color: transparent;
+    transform: rotate(-135deg);
+    margin-left: 8px;
+}
+
+button[aria-haspopup="listbox"][aria-expanded="true"]::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    text-indent: -9999px;
+    border-top: 2px solid #72747C;
+    border-left: 2px solid #72747C;
+    transition: all 250ms ease-in-out;
+    text-decoration: none;
+    color: transparent;
+    transform: rotate(45deg);
+    margin-left: 8px;
+}
+
+button[aria-haspopup="listbox"] + [role="listbox"] {
+    position: absolute;
+    z-index: 9999;
+    margin: 0;
+    width: fit-content;
+    max-width: 12em;
+    min-height: fit-content;
+    max-height: 10em;
+    border-top: 0;
+    overflow-y: auto;
+}
+
+[role="toolbar"] {
+    display: flex;
+}
+
+[role="toolbar"] > * {
+    border: 1px solid #aaa;
+    background: #ccc;
+}
+
+[role="toolbar"] > [aria-disabled="false"]:focus {
+    background-color: #eee;
+}
+
+button {
+    font-size: inherit;
+}
+
+button[aria-disabled="true"] {
+    opacity: 50%;
+}
+
+.move-right-btn::after {
+    content: " →";
+}
+
+.move-left-btn::before {
+    content: "← ";
+}
+
+.annotate {
+    color: #366ed4;
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+.offscreen {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    font-size: 14px;
+    white-space: nowrap;
+}
+  
 // input::-webkit-outer-spin-button,
 // input::-webkit-inner-spin-button {
 //     -webkit-appearance: none;
@@ -880,8 +1106,8 @@
 // v3 - new global styles
 
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    // width: 5px;
+    // height: 5px;
     background-color: transparent;
 }
 
@@ -999,7 +1225,7 @@ a {
 }
 
 .settingsIcon {
-    background-image: url('../images/settings.png');
+    background-image: url('../images/settings.svg');
 }
 
 .lockIcon {

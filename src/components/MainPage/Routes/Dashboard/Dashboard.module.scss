@@ -1,7 +1,120 @@
+// .grid {
+//   position: relative;
+// }
 
+// .item, .customItem {
+//   display: block;
+//   position: absolute;
+//   margin: 5px;
+//   z-index: 1;
+// }
+
+// .item {
+//   // width: calc(100%/4);
+//   width: fit-content;
+//   cursor: pointer;
+//   margin: 0;
+//   padding-left: 0;
+//   padding-right: 30px;
+  
+// }
+
+// .item.muuri-item-dragging {
+//   z-index: 3;
+// }
+
+// .item.muuri-item-releasing {
+//   z-index: 2;
+// }
+
+// .item.muuri-item-hidden {
+//   z-index: 0;
+// }
+
+// .item-content {
+//   position: relative;
+//   width: fit-content;
+//   // height: 100%;
+// }
 .container {
-    background: #fff;
-    padding: 2px 20px 20px;
-    border-radius: 5px;
-    margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  .extentions {
+    width: 180px;
+    height: 32px;
+    font-weight: 100;
+    background-color: #f7f8fa;
+    border: 1px solid #c5c5c5;
+    border-bottom-left-radius: 17px;
+    display: flex;
+    align-items: center;
+
+    .extentionsIcon {
+      width: 14px;
+      height: 14px;
+      margin: 0 10px ;
+    }
+
+    p {
+      font-size: 14px;
+      letter-spacing: 0.4px;
+      line-height: 20px;
+      color: #9496a0;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+
 }
+// .container {
+//   padding: 10px 0;
+
+//   .monitoringTitle {
+//     font-size: 22px;
+//     color: #72747c;
+//     // font-weight: 400;
+//     // font-family: "Noto Sans";
+//     margin-bottom: 0;
+//     margin-left: 10px;
+//   }
+
+//   .monitoringPart {
+//     position: relative;
+//     top: 0;
+//     left: 0;
+
+//       .itemLeftPart {
+//         display: flex;
+//         align-items: center;
+//         margin-right: 10px;
+
+//         img {
+//           width: 31px;
+//           height: 31px;
+//         }
+
+//         .path {
+//           width: 8px;
+//           margin-left: 10px;
+//         }
+//       }
+
+//       .total {
+//         font-size: 22px;
+//         color: #6aaa99;
+//         font-weight: 700;
+//         margin-left: 5px;
+//       }
+//     }
+//   }
+// }
+
+
+// table, td, th {
+//     border: 1px solid black;
+// }
+
+// table {
+//     width: 100%;
+//     border-collapse: collapse;
+// }

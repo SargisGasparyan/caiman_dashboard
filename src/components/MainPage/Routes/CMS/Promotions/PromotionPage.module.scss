@@ -1,0 +1,35 @@
+.promotions{
+    display: flex;
+    flex-direction: column;
+    min-width: 416px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: var(--grey--dark);
+    padding: 22px 0;
+}
+
+@media screen and (min-width: 576px) {
+    .promotions_container{
+        max-width: 1606px;
+    }
+}
+
+/**************------scrollbar------*****************/
+/* Chrome, safari */
+*::-webkit-scrollbar {
+    height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--blue);
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF70;
+  border: none;        /* color of the tracking area */
+}
+
+/* Firefox */
+.selector {
+		scrollbar-width: none;
+	}
+/**************------END of scrollbar------*****************/

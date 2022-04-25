@@ -75,8 +75,19 @@ const SideBar = ({ validRoutes }) => {
                     key={idx}
                     className={s.dropdownItem}
                     activeClassName={s.activeChild}
-                    onClick={() => { setActiveDropdown(null); }}
-                    to={route.path + child.path}>
+                    onClick={() => {
+                      const partnerTabs = partners.find(partner => partner.partner === `${localStorage.getItem('partner_name')}`).tabs;
+                      setActiveDropdown(null);
+                      partnerTabs.includes(child.name) === false && dispatch(addTabAction({
+                        partner: `${localStorage.getItem('partner_name')}`,
+                        text: child.name,
+                      }));
+                      dispatch(activeTabAction({
+                        partner: `${localStorage.getItem('partner_name')}`,
+                        tabName: child.name,
+                      }));
+                    }}
+                    to={child.path}>
                     {child.name}
                   </NavLink>
                 ))}

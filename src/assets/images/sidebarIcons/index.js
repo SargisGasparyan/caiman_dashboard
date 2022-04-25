@@ -10,6 +10,7 @@ import statistics from './statistics.svg';
 import transaction from './transaction.svg';
 import favorite from './favorite.svg';
 import info from '../icons/infoIcon.svg';
+import cms from './cms.svg';
 
 export const ICONS = {
   acl,
@@ -24,4 +25,5 @@ export const ICONS = {
   transaction,
   favorite,
   info,
+  cms,
 };

@@ -6,11 +6,12 @@
   display: flex;
   flex-direction: column;
   background: var(--color-blue-dark);
-  color: var(--color-blue-light);
+  // color: var(--color-icon-grey);
   transition: 0.6s ease-out;
   overflow-y: visible auto;
   user-select: none;
   z-index: 10;
+  border-right: 1px solid #72747c3e;
 }
 
 .sidebarActive {
@@ -26,29 +27,20 @@
   cursor: pointer;
   overflow: hidden;
   min-height: 50px;
+  color: var(--color-icon-grey);
+  outline: none;
 }
 
 .menuItem:hover {
-  background-color: var(--color-blue);
-  color: white;
+  // background-color: var(--color-blue);
+  color: var(--color-active-blue);
   img {
-    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(100deg) brightness(5000%) contrast(100%);
+    // filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(100deg) brightness(5000%) contrast(100%);
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%) brightness(90%);
   }
 
   .arrowDown {
-    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(100deg) brightness(5000%) contrast(100%);
-  }
-}
-
-.activeItem {
-  background-color: var(--color-blue);
-  color: white;
-  img {
-    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(100deg) brightness(5000%) contrast(100%);
-  }
-
-  .arrowDown {
-    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(100deg) brightness(5000%) contrast(100%);
+    // filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(100deg) brightness(5000%) contrast(100%);
   }
 }
 
@@ -56,6 +48,20 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
+  // color: var(--color-icon-grey);
+}
+
+.activeItem {
+  // background-color: var(--color-blue);
+  color: var(--color-active-blue);
+  img {
+    // filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(100deg) brightness(0%);
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%) brightness(90%);
+  }
+
+  .arrowDown {
+    // filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(100deg) brightness(5000%) contrast(100%);
+  }
 }
 
 .icon {
@@ -83,14 +89,15 @@
   padding: 10px 25px;
   font-size: 15px;
   white-space: nowrap;
+  color: var(--color-icon-grey);
 }
 
 .dropdownItem:hover {
-  color: white;
+  color: var(--color-active-blue);
 }
 
 .activeChild {
-  color: white;
+  color: var(--color-active-blue);
 }
 
 
@@ -103,6 +110,7 @@
   left: 100%;
   top: 0;
   z-index: 999;
-  background-color: var(--color-blue);
+  color: var(--color-icon-grey);
+  background-color: var(--color-blue-dark);
   padding: 10px 0;
 }

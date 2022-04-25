@@ -1,9 +1,14 @@
-.red{
-   color:red
-    // transition-duration: .9s;
-
+.active{
+    color: green;
+    border-bottom: 3px solid green;
 }
-.gray{
-    color:gray;
+.active:hover{
+    color:green;
+}
 
+.not_active{
+    color: gray;
+}
+.not_active:hover{
+    color:gray;
 }
