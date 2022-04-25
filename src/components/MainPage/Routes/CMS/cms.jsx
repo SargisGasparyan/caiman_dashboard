@@ -1,9 +1,7 @@
-function Cms() {
-  return (
-    <div>
-      CMS
-    </div>
-  );
-}
+import React from 'react';
 
-export default Cms;
+const cms = () => (
+  <div>cms</div>
+);
+
+export default cms;

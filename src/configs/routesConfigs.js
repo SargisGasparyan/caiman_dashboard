@@ -12,7 +12,6 @@ import Player from '../components/MainPage/Routes/Player/Player';
 import PromotionPage from '../components/MainPage/Routes/CMS/Promotions/PromotionsPage';
 import Favorite from '../components/MainPage/Routes/Favorite/Favorite';
 import AclResources from '../components/MainPage/Routes/Acl/AclResources/AclResources';
-import Cms from '../components/MainPage/Routes/CMS/cms';
 import Promotions from '../components/MainPage/Routes/CMS/Promotions/Promotions';
 
 const { SUPER_ADMIN, ADMIN } = USER_ROLES;
@@ -205,52 +204,7 @@ export const MAIN_PAGE_ROUTES = [
     roles: [ SUPER_ADMIN, ADMIN ],
     icon: ICONS.acl,
   },
-  // {
-  //   multi: true,
-  //   name: 'CMS',
-  //   path: '/cms',
-  //   Component: Cms,
-  //   roles: [ SUPER_ADMIN, ADMIN ],
-  //   icon: ICONS.cms,
-  //   childs: [
-  //     {
-  //       name: 'Home',
-  //       path: '/home',
-  //       Component: Cms,
-  //       roles: [ ADMIN ],
-  //     },
-  //     {
-  //       name: 'Promotions',
-  //       path: '/promotions',
-  //       Component: Promotions,
-  //       roles: [ SUPER_ADMIN, ADMIN ],
-  //     },
-  //     {
-  //       name: 'Casino',
-  //       path: '/casino',
-  //       Component: Cms,
-  //       roles: [ SUPER_ADMIN, ADMIN ],
-  //     },
-  //     {
-  //       name: 'Pop-ups',
-  //       path: '/popUps',
-  //       Component: Cms,
-  //       roles: [ SUPER_ADMIN, ADMIN ],
-  //     },
-  //     {
-  //       name: 'Library',
-  //       path: '/library',
-  //       Component: Cms,
-  //       roles: [ SUPER_ADMIN, ADMIN ],
-  //     },
-  //     {
-  //       name: 'Footer',
-  //       path: '/footer',
-  //       Component: Cms,
-  //       roles: [ SUPER_ADMIN, ADMIN ],
-  //     },
-  //   ],
-  // },
+
   {
     name: 'ACL Resources',
     path: '/aclManagment',
